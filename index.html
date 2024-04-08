@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=  , initial-scale=1.0" />
+    <title>React Praticee</title>
+  </head>
+  <body>
+    <div id="header"><h1>header</h1></div>
+    <div id="root">
+      <h1>hi welcome to React</h1>
+    </div>
+    <div id="footer"><h1>footer</h1></div>
+    <!-- <script>
+        const heading=document.createElement("h1")
+        heading.innerHTML="jubair"
+        document.getElementById("root")
+        root.appendChild(heading)
+    </script> -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        const heading=React.createElement("h1",{},"hi this react")
+        const root=ReactDOM.createRoot(document.getElementById("root"))
+        //passing the react element inside the root
+        root.render(heading);
+        console.log(heading)
+    </script>
+  </body>
+</html>
