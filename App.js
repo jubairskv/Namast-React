@@ -31,5 +31,5 @@ const parent = React.createElement(
 );
 //const heading = React.createElement("h1", { id: "heading" }, "hi everyone");
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(parent);            //everything will render inside the root id
 console.log(parent);

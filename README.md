@@ -14,5 +14,13 @@ what is async and differ
 what is the shortest program of javascript? 
 -ans:empty file
 what is jsx?
+what is library?
+wht is framework?
 
 react is the javascript piece of code
+
+//CDN links will be order of the sequence
+1st two CDN links 
+then connect app .js with script tag
+
+if u already passing some react element with help of app.js then u directly added into html file anything it replace ur app.js code
