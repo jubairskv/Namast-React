@@ -1,0 +1,25 @@
+{
+  "name": "namast-react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by jubair",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jubairskv/Namast-React.git"
+  },
+  "keywords": [
+    "react",
+    "jubair",
+    "namaste",
+    "react"
+  ],
+  "author": "jubair K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jubairskv/Namast-React/issues"
+  },
+  "homepage": "https://github.com/jubairskv/Namast-React#readme"
+}

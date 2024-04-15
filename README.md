@@ -24,3 +24,5 @@ react is the javascript piece of code
 then connect app .js with script tag
 
 if u already passing some react element with help of app.js then u directly added into html file anything it replace ur app.js code
+
+what is NPM?
