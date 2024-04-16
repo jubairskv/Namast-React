@@ -10,12 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/jubairskv/Namast-React.git"
   },
-  "keywords": [
-    "react",
-    "jubair",
-    "namaste",
-    "react"
-  ],
+  "keywords": [],
   "author": "jubair K",
   "license": "ISC",
   "bugs": {
