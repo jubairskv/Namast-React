@@ -26,3 +26,10 @@ then connect app .js with script tag
 if u already passing some react element with help of app.js then u directly added into html file anything it replace ur app.js code
 
 what is NPM?
+
+npm install
+ -D parcel
+
+there are tow types of dependency:
+*dev dependency
+*normal dependency

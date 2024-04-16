@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jubairskv/Namast-React/issues"
   },
-  "homepage": "https://github.com/jubairskv/Namast-React#readme"
+  "homepage": "https://github.com/jubairskv/Namast-React#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
