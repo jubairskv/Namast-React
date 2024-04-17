@@ -16,7 +16,7 @@
 66C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\svgo\lib133578254122102586 1
 86C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\domutils\lib\manipulation.js133578254108960010 0
 108C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\intro.doc133578254134828483 0
-55C:\Users\jubai\OneDrive\Desktop\Namast-React\.gitignore133578473172224285 0
+55C:\Users\jubai\OneDrive\Desktop\Namast-React\.gitignore133578476113253651 0
 127C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeDoctype.js133578254124993363 0
 89C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\source-map-js\lib\quick-sort.js133578254109739726 0
 72C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\lmdb\README.md133578254138572636 0
