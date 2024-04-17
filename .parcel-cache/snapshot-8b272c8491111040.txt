@@ -1,9 +1,9 @@
 5964
-107C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\caniuse-lite\data\features\css-overflow-anchor.js133578254141604789 0
-80C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\entities\lib\generated133578254120101532 1
-63C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\chalk133578254109614148 1
-60C:\Users\jubai\OneDrive\Desktop\Namast-React\dist\index.html133578470603869992 0
-94C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\csso\node_modules\css-tree\lib\lexer133578254143383042 1
+121C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\core\test\fixtures\invalid-source-not-file\package.json133578254141584080 0
+127C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\package-manager\test\fixtures\has-foo\subpackage\package.json133578254124016363 0
+97C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-tree\lib\definition-syntax\parse.js133578254142932287 0
+86C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\electron-to-chromium\LICENSE133578254103178253 0
+57C:\Users\jubai\OneDrive\Desktop\Namast-React\package.json133578466915754787 0
 127C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\Block.js133578254111984633 0
 92C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\svgo\plugins\convertShapeToPath.js133578254125630778 0
 83C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\node-addon-api\napi-inl.h133578254112130185 0
@@ -16,7 +16,7 @@
 66C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\svgo\lib133578254122102586 1
 86C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\domutils\lib\manipulation.js133578254108960010 0
 108C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\intro.doc133578254134828483 0
-55C:\Users\jubai\OneDrive\Desktop\Namast-React\.gitignore133578289237645926 0
+55C:\Users\jubai\OneDrive\Desktop\Namast-React\.gitignore133578473172224285 0
 127C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeDoctype.js133578254124993363 0
 89C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\source-map-js\lib\quick-sort.js133578254109739726 0
 72C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\lmdb\README.md133578254138572636 0
@@ -75,11 +75,6 @@
 115C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\htmlnano\docs\versioned_docs\version-2.0.0\050-modules.md133578254128052808 0
 108C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\source-map\parcel_sourcemap_node\artifacts133578254130005118 1
 57C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules133578259205105534 1
-121C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\core\test\fixtures\invalid-source-not-file\package.json133578254141584080 0
-127C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\package-manager\test\fixtures\has-foo\subpackage\package.json133578254124016363 0
-97C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-tree\lib\definition-syntax\parse.js133578254142932287 0
-86C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\electron-to-chromium\LICENSE133578254103178253 0
-57C:\Users\jubai\OneDrive\Desktop\Namast-React\package.json133578466915754787 0
 92C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\lmdb\dependencies\lz4\lib\xxhash.h133578254136844704 0
 103C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\csso\node_modules\css-tree\cjs\data-patch.cjs133578254121635036 0
 76C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\chrome-trace-event133578254109644991 1
@@ -202,6 +197,9 @@
 79C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\mdn-data\CHANGELOG.md133578254121840909 0
 89C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\caniuse-lite\data\regions\EG.js133578254145263225 0
 64C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\stable133578254107077299 1
+107C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\caniuse-lite\data\features\css-overflow-anchor.js133578254141604789 0
+80C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\entities\lib\generated133578254120101532 1
+63C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\chalk133578254109614148 1
 94C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\node-addon-api\tools\clang-format.js133578254114947293 0
 87C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-select\lib\esm\general.js133578254113028085 0
 97C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\caniuse-lite\data\features\png-alpha.js133578254153467236 0
@@ -1193,8 +1191,8 @@
 108C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@swc\helpers\esm\_class_apply_descriptor_update.js133578254135309325 0
 108C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\core\test\fixtures\plugins\local-plugin.js133578254133503066 0
 76C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\svgo\lib\svgo.d.ts133578254120018242 0
-80C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\lightningcss\README.md133578254113403941 0
 80C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\semver\functions\lt.js133578254118740960 0
+80C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\lightningcss\README.md133578254113403941 0
 111C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\caniuse-lite\data\features\document-evaluate-xpath.js133578254144804058 0
 81C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\rust\browser.js133578254105433941 0
 115C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@swc\helpers\cjs\_class_static_private_field_spec_set.cjs133578254122606372 0
@@ -2851,6 +2849,7 @@
 98C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\csso\node_modules\css-tree\lib\generator133578254143302325 1
 106C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-select\node_modules\domutils\lib\legacy.d.ts133578254126516686 0
 97C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\csso\node_modules\css-tree\lib\index.js133578254140805672 0
+94C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\csso\node_modules\css-tree\lib\lexer133578254143383042 1
 95C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\csso\node_modules\css-tree\lib\syntax133578254141099452 1
 98C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\csso\node_modules\css-tree\lib\tokenizer133578254143588685 1
 77C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\base-x\package.json133578254104525204 0
@@ -3018,6 +3017,7 @@
 93C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\caniuse-lite\data\features\touch.js133578254156705424 0
 124C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\optimizer-htmlnano\node_modules\mdn-data\css\at-rules.json133578254109552031 0
 108C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\csso\node_modules\css-tree\cjs\tokenizer\types.cjs133578254135557793 0
+89C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-tree\lib\convertor\index.js133578254141193436 0
 87C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-select\lib\esm\types.d.ts133578254131008300 0
 108C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\csso\node_modules\css-tree\cjs\tokenizer\utils.cjs133578254136083075 0
 86C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\packager-css\LICENSE133578254103342719 0
@@ -3321,7 +3321,6 @@
 97C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-tree\lib\definition-syntax\index.js133578254141234936 0
 96C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-tree\lib\definition-syntax\walk.js133578254144180211 0
 90C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-tree\lib\convertor\create.js133578254138781539 0
-89C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-tree\lib\convertor\index.js133578254141193436 0
 80C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-tree\dist\data.cjs133578254122501500 0
 83C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\css-tree\dist\version.cjs133578254137375548 0
 83C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@swc\helpers\_\_ts_values133578254145799600 1
@@ -4812,6 +4811,7 @@
 83C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\packager-html\src133578254105598829 1
 82C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\resolver-default133578254106673272 1
 85C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\runtime-browser-hmr133578254111020566 1
+129C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\workers\test\integration\workerfarm\resolve-shared-reference.js133578254122491071 0
 76C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\runtime-js133578254124556780 1
 87C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\runtime-react-refresh133578254106673272 1
 100C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\core\src\serializerCore.browser.js133578254138190989 0
@@ -4834,7 +4834,6 @@
 109C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\workers\test\integration\workerfarm\echo.js133578254117163931 0
 108C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\workers\test\integration\workerfarm\ipc.js133578254120268159 0
 109C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\workers\test\integration\workerfarm\ping.js133578254121218601 0
-129C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\workers\test\integration\workerfarm\resolve-shared-reference.js133578254122491071 0
 86C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\packager-svg\LICENSE133578254103302723 0
 87C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\utils\src\throttle.js133578254129521441 0
 88C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\@parcel\workers\src\backend.js133578254105763706 0
@@ -5963,3 +5962,4 @@
 85C:\Users\jubai\OneDrive\Desktop\Namast-React\node_modules\.bin\update-browserslist-db133578254164292989 0
 67C:\Users\jubai\OneDrive\Desktop\Namast-React\dist\index.7826abd7.js133578470140606831 0
 71C:\Users\jubai\OneDrive\Desktop\Namast-React\dist\index.7826abd7.js.map133578470140682541 0
+60C:\Users\jubai\OneDrive\Desktop\Namast-React\dist\index.html133578470603869992 0
