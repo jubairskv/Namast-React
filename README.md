@@ -35,3 +35,40 @@ there are tow types of dependency:
 *normal dependency
 
 why your app is fast
+what is NPX
+why do we use NPX
+what is npm
+why do we use npm
+how you create react structure
+what is package.json
+why do we use package.json
+what is package-lock.json
+why do we use package-lock.json
+what is bundler
+what is webpack
+create react app behind the scene use webpack
+what is babel in react js
+what is node_moules
+what is .gitignore
+what is dist in parcel
+what is parcel caching in parcel
+when every u you build the code it store in dist file 
+
+# parcel
+- dev bulid
+- local server
+- hot module replacement 
+- reliable cachimg
+- lazy loading
+- tree shaking
+- minification
+- image optimization
+- code splitting
+- content hashing
+-differential bundling
+- powerful plugins
+- file watching algoithm
+- bundling
+- HTTPS
+- Diagnostic
+- different dev and product bundles
