@@ -17,21 +17,20 @@ import ReactDOM from "react-dom"
  * reactElement(object)=>HTML(browser understand)
  *
  */
-const parent = React.createElement(
-  //react element
-  "div",
-  { id: "parent" },
-//  
-[ React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "hi there this jubair react"), //if u want to pass nested component u have pass like as array
-    React.createElement("h2", {}, "hi there"),
-  ]),
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "hi there"), //if u want to pass nested component u have pass like as array
-    React.createElement("h2", {}, "hi there"),
-  ])]
-);
-//const heading = React.createElement("h1", { id: "heading" }, "hi everyone");
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);            //everything will render inside the root id
-console.log(parent);
+// const parent = React.createElement(
+//   react element
+//   "div",
+//   { id: "parent" },
+// [ React.createElement("div", { id: "child" }, [
+//     React.createElement("h1", {}, "hi there this jubair react"), //if u want to pass nested component u have pass like as array
+//     React.createElement("h2", {}, "hi there"),
+//   ]),
+//   React.createElement("div", { id: "child" }, [
+//     React.createElement("h1", {}, "hi there"), //if u want to pass nested component u have pass like as array
+//     React.createElement("h2", {}, "hi there"),
+//   ])]
+// );
+// const heading = React.createElement("h1", { id: "heading" }, "hi everyone");
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(parent);            //everything will render inside the root id
+// console.log(parent);
