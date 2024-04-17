@@ -8,9 +8,9 @@ import ReactDOM from "react-dom"
 // root.render(container);
 // console.log(container)
 /**
- * <div id="parent">
- * <div id=child>
+ * <div id="parent"> * <div id=child>
  * <h1></h1>
+ * 
  * <h2></h2>
  * </div>
  * </div>
@@ -23,7 +23,7 @@ const parent = React.createElement(
   { id: "parent" },
 //  
 [ React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "hi there"), //if u want to pass nested component u have pass like as array
+    React.createElement("h1", {}, "hi there this jubair react"), //if u want to pass nested component u have pass like as array
     React.createElement("h2", {}, "hi there"),
   ]),
   React.createElement("div", { id: "child" }, [

@@ -33,3 +33,5 @@ npm install
 there are tow types of dependency:
 *dev dependency
 *normal dependency
+
+why your app is fast
