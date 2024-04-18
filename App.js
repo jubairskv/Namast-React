@@ -30,7 +30,12 @@ import ReactDOM from "react-dom"
 //     React.createElement("h2", {}, "hi there"),
 //   ])]
 // );
-const jsx=<h1 id="heading">hi there</h1>
+
+//Reactelement => object => HTML element
+
+//jsx
+const jsx=<h1 id="heading">React element using JSX</h1>
+//react element
 const heading = React.createElement("h1", { id: "heading" }, "hi everyone");
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(jsx);            //everything will render inside the root id

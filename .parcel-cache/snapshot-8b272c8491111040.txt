@@ -43,7 +43,7 @@
 62C:\Namast-React\node_modules\lmdb\dependencies\lz4\lib\lz4hc.h133579315836703755 0
 62C:\Namast-React\node_modules\cosmiconfig\dist\loaders.d.ts.map133579315831329143 0
 63C:\Namast-React\node_modules\htmlnano\lib\modules\minifyCss.mjs133579315835860182 0
-22C:\Namast-React\App.js133579314550555782 0
+22C:\Namast-React\App.js133579318520169548 0
 86C:\Namast-React\node_modules\csso\node_modules\css-tree\lib\syntax\config\generator.js133579315837698776 0
 80C:\Namast-React\node_modules\caniuse-lite\data\features\css-text-wrap-balance.js133579315838528372 0
 48C:\Namast-React\node_modules\tslib\tslib.es6.mjs133579315829908510 0
@@ -60,15 +60,13 @@
 61C:\Namast-React\node_modules\source-map-js\lib\source-node.js133579315830030192 0
 85C:\Namast-React\node_modules\@swc\helpers\esm\_class_static_private_field_spec_set.js133579315836863450 0
 86C:\Namast-React\node_modules\csso\node_modules\css-tree\cjs\definition-syntax\walk.cjs133579315836863450 0
-42C:\Namast-React\dist\index.7826abd7.js.map133579316812291906 0
-38C:\Namast-React\dist\index.7826abd7.js133579316812159362 0
 50C:\Namast-React\node_modules\msgpackr\iterators.js133579315831199075 0
 45C:\Namast-React\node_modules\has-flag\license133579315827862330 0
 47C:\Namast-React\node_modules\.package-lock.json133579315875005214 0
 45C:\Namast-React\node_modules\csso\cjs\replace133579315833632319 1
 48C:\Namast-React\node_modules\svgo\lib\types.d.ts133579315832842797 0
 60C:\Namast-React\node_modules\csso\cjs\replace\Percentage.cjs133579315832907857 0
-20C:\Namast-React\dist133579316812311788 1
+20C:\Namast-React\dist133579318521958276 1
 80C:\Namast-React\node_modules\css-select\lib\pseudo-selectors\subselects.d.ts.map133579315834695104 0
 59C:\Namast-React\node_modules\lmdb\bin\download-prebuilds.js133579315836978496 0
 77C:\Namast-React\node_modules\css-select\node_modules\domutils\lib\legacy.d.ts133579315834511362 0
@@ -5959,3 +5957,5 @@
 42C:\Namast-React\node_modules\.bin\svgo.cmd133579315844861223 0
 56C:\Namast-React\node_modules\.bin\update-browserslist-db133579315844861223 0
 60C:\Namast-React\node_modules\.bin\update-browserslist-db.cmd133579315844861223 0
+38C:\Namast-React\dist\index.7826abd7.js133579318521813081 0
+42C:\Namast-React\dist\index.7826abd7.js.map133579318521948225 0
