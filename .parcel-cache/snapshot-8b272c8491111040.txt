@@ -43,7 +43,7 @@
 62C:\Namast-React\node_modules\lmdb\dependencies\lz4\lib\lz4hc.h133579315836703755 0
 62C:\Namast-React\node_modules\cosmiconfig\dist\loaders.d.ts.map133579315831329143 0
 63C:\Namast-React\node_modules\htmlnano\lib\modules\minifyCss.mjs133579315835860182 0
-22C:\Namast-React\App.js133579318520169548 0
+22C:\Namast-React\App.js133579325144378353 0
 86C:\Namast-React\node_modules\csso\node_modules\css-tree\lib\syntax\config\generator.js133579315837698776 0
 80C:\Namast-React\node_modules\caniuse-lite\data\features\css-text-wrap-balance.js133579315838528372 0
 48C:\Namast-React\node_modules\tslib\tslib.es6.mjs133579315829908510 0
@@ -66,7 +66,7 @@
 45C:\Namast-React\node_modules\csso\cjs\replace133579315833632319 1
 48C:\Namast-React\node_modules\svgo\lib\types.d.ts133579315832842797 0
 60C:\Namast-React\node_modules\csso\cjs\replace\Percentage.cjs133579315832907857 0
-20C:\Namast-React\dist133579318521958276 1
+20C:\Namast-React\dist133579325145748374 1
 80C:\Namast-React\node_modules\css-select\lib\pseudo-selectors\subselects.d.ts.map133579315834695104 0
 59C:\Namast-React\node_modules\lmdb\bin\download-prebuilds.js133579315836978496 0
 77C:\Namast-React\node_modules\css-select\node_modules\domutils\lib\legacy.d.ts133579315834511362 0
@@ -74,7 +74,7 @@
 47C:\Namast-React\node_modules\picocolors\LICENSE133579315826436637 0
 53C:\Namast-React\node_modules\to-regex-range\README.md133579315828024481 0
 39C:\Namast-React\node_modules\source-map133579315831199075 1
-26C:\Namast-React\.gitignore133579310156695024 0
+26C:\Namast-React\.gitignore133579320680698462 0
 81C:\Namast-React\node_modules\@swc\helpers\esm\_object_without_properties_loose.js133579315837462283 0
 66C:\Namast-React\node_modules\@parcel\reporter-cli\src\logLevels.js133579315830176665 0
 61C:\Namast-React\node_modules\css-what\lib\commonjs\types.d.ts133579315832364287 0
@@ -146,7 +146,7 @@
 79C:\Namast-React\node_modules\css-select\node_modules\entities\lib\encode.js.map133579315833794195 0
 66C:\Namast-React\node_modules\@swc\helpers\_\_ts_param\package.json133579315839364756 0
 95C:\Namast-React\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\attributes.d.ts133579315832695250 0
-25C:\Namast-React\README.md133579310161880519 0
+25C:\Namast-React\README.md133579320351247062 0
 78C:\Namast-React\node_modules\react-dom\cjs\react-dom-test-utils.development.js133579315833632319 0
 89C:\Namast-React\node_modules\react-dom\umd\react-dom-server-legacy.browser.development.js133579315830365493 0
 50C:\Namast-React\node_modules\mdn-data\css\index.js133579315827726976 0
@@ -5957,5 +5957,5 @@
 42C:\Namast-React\node_modules\.bin\svgo.cmd133579315844861223 0
 56C:\Namast-React\node_modules\.bin\update-browserslist-db133579315844861223 0
 60C:\Namast-React\node_modules\.bin\update-browserslist-db.cmd133579315844861223 0
-38C:\Namast-React\dist\index.7826abd7.js133579318521813081 0
-42C:\Namast-React\dist\index.7826abd7.js.map133579318521948225 0
+38C:\Namast-React\dist\index.7826abd7.js133579325145623645 0
+42C:\Namast-React\dist\index.7826abd7.js.map133579325145748374 0

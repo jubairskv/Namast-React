@@ -72,3 +72,5 @@ when every u you build the code it store in dist file
 - HTTPS
 - Diagnostic
 - different dev and product bundles
+
+we writing code for human and machine 1st preferenece is human after that machine
