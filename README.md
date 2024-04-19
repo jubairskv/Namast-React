@@ -89,5 +89,6 @@ hi
 </h1>)
 
 what is difference between react element and functional component
+what is componenet composition
 how you render component in react
 <reactcomponent/>  you need to wrap into fragment
