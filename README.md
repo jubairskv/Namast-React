@@ -99,3 +99,8 @@ what is serverr side rendering
 what is dynamic website
 what is static website
 waht is responsive design
+
+when ever you start to design or developing application i need to start planning how your app went look like design in rough paper
+
+//Website plane:
+header
