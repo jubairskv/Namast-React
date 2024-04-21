@@ -92,3 +92,10 @@ what is difference between react element and functional component
 what is componenet composition
 how you render component in react
 <reactcomponent/>  you need to wrap into fragment
+what is static
+what is dynamic
+what is client side rendering
+what is serverr side rendering
+what is dynamic website
+what is static website
+waht is responsive design
