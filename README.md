@@ -120,3 +120,18 @@ when ever you start to design or developing application i need to start planning
  -Contact
 
  Different types of CSS
+what is  state
+what is props
+when every new need to pass data for dynamic component 
+its normal argument to the function
+
+what is static data in react
+why did we use props
+when u need to pass data dynamicaly we need to use props
+what is props destrcturing
+how does data come from backend to us
+what is config driven UI -important
+all the UI driven by config =data
+contolling Ui based on data or location, how the UI looks like using config
+data=config-comes from backend
+Ui chnaged based on the backend data if my in loation has no carousel data ui will chnaged based on the backend data
