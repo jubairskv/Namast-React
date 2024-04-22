@@ -118,3 +118,5 @@ when ever you start to design or developing application i need to start planning
  -links
  -address
  -Contact
+
+ Different types of CSS
