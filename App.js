@@ -62,45 +62,92 @@ const functionsComponent = () => {
         </h1>
     )
 }*/
-const elem=<span>react  element</span>
+//const elem=<span>react  element</span>
 //react Element
-const title =(
-   <h1>
-     hi React component
-      {elem}
-     </h1>
-)
-const data=1000
+// const title =(
+//    <h1>
+//      hi React component
+//       {elem}
+//      </h1>
+// )
+//const data=1000
 //const datas=api.getData();
 
 //component composition
-const Title = ()=>{
-   return   <h1>
-    hi component composition
-    </h1>
-}
+// const Title = ()=>{
+//    return   <h1>
+//     hi component composition
+//     </h1>
+// }
 
-const FunctionssComponent = () => (
-    <div id="heading">
-        <Title/>
-        <Title></Title>
-        {title}
-        {Title()}  
-        {data}
-        <h1>{data}</h1>
-        <h1>{console.log("jubair")}</h1>
-        <h1 className="heading">
-            hi fuction component
-        </h1>
+// const FunctionssComponent = () => (
+//     <div id="heading">
+//         <Title/>
+//         <Title></Title>
+//         {title}
+//         {Title()}  
+//         {data}
+//         <h1>{data}</h1>
+//         <h1>{console.log("jubair")}</h1>
+//         <h1 className="heading">
+//             hi fuction component
+//         </h1>
         
-    </div>
-)
+//     </div>
+// )
 
 //const funComponent = () => <h1>hi fuction component</h1>  //both same component
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+//const root = ReactDOM.createRoot(document.getElementById("root"));
 //root.render(multiline_jsx);  //rendering react elelemnt
-root.render(<FunctionssComponent/>);   //rendering React component         //everything will render inside the root id
+//root.render(<FunctionssComponent/>);   //rendering React component         //everything will render inside the root id
 // console.log(parent);
 
+const Header = ()=>{
+    return (
+        <div className="header">
+            <div className="logo-conatiner">
+              <img className="logo" src="https://penji.co/wp-content/uploads/2022/08/10.-mr.-d-food-logo.jpg"/>
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+const RestaurantCard=()=>{
+    return(
+        <div className="res-card">
+            <h3>Meghana Foods</h3>
+        </div>
+    )
+}
+const Body=()=>{
+    return (
+        <div className="body">
+            <div className="search">Search</div>
+            <div className="res-container">
+                <RestaurantCard/>
+            </div>
+        </div>
+    )
+}
+
+const AppLayout = ()=>{
+    return (
+        <div className="App">
+            <Header/>
+            <Body/>
+        </div>
+    )
+}
+
+const root =ReactDOM.createRoot(document.getElementById("root"))
+root.render(<AppLayout/>)
 
