@@ -106,16 +106,11 @@ const functionsComponent = () => {
 //root.render(<FunctionssComponent/>);   //rendering React component         //everything will render inside the root id
 // console.log(parent);
 
-
-
-
-
-
 const AppLayout = () => {
   return (
     <div className="App">
-      <Header />
-      <Body />
+      <Header/>
+      <Body/>
     </div>
   )
 }
