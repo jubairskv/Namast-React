@@ -135,7 +135,9 @@ all the UI driven by config =data
 contolling Ui based on data or location, how the UI looks like using config
 data=config-comes from backend
 Ui chnaged based on the backend data if my in loation has no carousel data ui will chnaged based on the backend data
+
 what is difference between .js and .jsx extension
+
 why we need key in react
 when ever you use map use key in there and also
 when data snt new cards data it wont render whole cards only it will rerender the exact snted card for optmizing the page if u wont use key it will rerenderr every cards in 
@@ -146,3 +148,21 @@ Keys help React identify which items have changed, are added, or are removed.
 
 key={index}  //dont use index for key  //bad practice
 React itself says dont use key as index 
+
+never ever use hardcore data or url or any url links like image ,api anything dont store it in component keep it separate file
+like constant.js,config.js,utils.js something like that standard way is utils.js
+
+what are the types of import/export in react
+there are two types of import/export in react
+-named import/export
+-default import/export
+
+default import/export
+  import componentname from "./path/"
+  export deafult componentname
+
+named import/export
+  export const componnet
+  import {componet} from "./path"
+
+can i do deafult export with name export both the things
