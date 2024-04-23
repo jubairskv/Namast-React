@@ -135,3 +135,14 @@ all the UI driven by config =data
 contolling Ui based on data or location, how the UI looks like using config
 data=config-comes from backend
 Ui chnaged based on the backend data if my in loation has no carousel data ui will chnaged based on the backend data
+what is difference between .js and .jsx extension
+why we need key in react
+when ever you use map use key in there and also
+when data snt new cards data it wont render whole cards only it will rerender the exact snted card for optmizing the page if u wont use key it will rerenderr every cards in 
+why do we use key in react
+key={restaurant.card.card.id}     //good practice
+Keys help React identify which items have changed, are added, or are removed.
+
+
+key={index}  //dont use index for key  //bad practice
+React itself says dont use key as index 
