@@ -165,4 +165,4 @@ named import/export
   export const componnet
   import {componet} from "./path"
 
-can i do deafult export with name export both the things
+can i do deafult export with name export both the things in same component?
