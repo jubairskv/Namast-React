@@ -166,3 +166,6 @@ named import/export
   import {componet} from "./path"
 
 can i do deafult export with name export both the things in same component?
+
+what is react hooks
+
