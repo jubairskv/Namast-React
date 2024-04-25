@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client"
 import Header from "./Components/Header"
 import Body from "./Components/Body";
+import { Provider } from "react-redux";
+import store from "./utils/store";
 
 // const heading1=React.createElement("h1",{id:"title"},"Heading1")
 // const heading2=React.createElement("h2",{id:"title"},"Heading2")
@@ -108,10 +110,13 @@ const functionsComponent = () => {
 
 const AppLayout = () => {
   return (
+
+    <Provider store={store}>
     <div className="App">
       <Header/>
       <Body/>
     </div>
+    </Provider>
   )
 }
 const root = ReactDOM.createRoot(document.getElementById("root"))
