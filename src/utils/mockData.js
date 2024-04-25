@@ -849,7 +849,7 @@ const resList = [
         "card": {
           "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
           "info": {
-            "id": "200767",
+            "id": "2001",
             "name": "Sharief Bhai",
             "cloudinaryImageId": "5015204e6868e99a2e4d84880af68c5a",
             "locality": "2nd Stage",
@@ -984,7 +984,7 @@ const resList = [
         "card": {
           "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
           "info": {
-            "id": "439141",
+            "id": "4391",
             "name": "Biryani Blues",
             "cloudinaryImageId": "97377e54937c079fe269d744aa66274a",
             "locality": "Church Street",
@@ -1101,7 +1101,7 @@ const resList = [
         "card": {
           "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
           "info": {
-            "id": "426393",
+            "id": "42623",
             "name": "Svss Biryani",
             "cloudinaryImageId": "eea5349022df0d34cce76cb0c6884e72",
             "locality": "CMH Road",
@@ -1228,7 +1228,7 @@ const resList = [
         "card": {
           "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
           "info": {
-            "id": "32738",
+            "id": "327908",
             "name": "Donne Biryani House",
             "cloudinaryImageId": "cgtfmodhd9gme13pblre",
             "locality": "Sampige road",
@@ -1339,7 +1339,7 @@ const resList = [
         "card": {
           "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
           "info": {
-            "id": "123985",
+            "id": "1239090",
             "name": "Hyderabadi Biryani Hotel",
             "cloudinaryImageId": "6087ee14b9ede7e3d0b127fb75d919fc",
             "locality": "Malleshwaram",
@@ -1454,7 +1454,7 @@ const resList = [
         "card": {
           "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
           "info": {
-            "id": "41100",
+            "id": "419080",
             "name": "Nagarjuna - Since 1984",
             "cloudinaryImageId": "dv37g3hyph2fyeqw6kfl",
             "locality": "Residency Road",
@@ -1580,7 +1580,7 @@ const resList = [
         "card": {
           "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
           "info": {
-            "id": "3434",
+            "id": "3432",
             "name": "Nandhini Deluxe",
             "cloudinaryImageId": "b7df40343b2a9df3f275024aff13d5df",
             "locality": "St. Marks Road",

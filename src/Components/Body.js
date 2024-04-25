@@ -110,7 +110,17 @@ import resList from "../utils/mockData";
 
 
 const Body = () => {
-  const [res, setRes] = useState(resList);
+  //Normal varaible
+  //let res=[]
+
+  //state Varaible res-inital value or default value  setRes-updated value      default value down  it also act as a nrml variable
+  const [res, setRes] = useState(resList);  //function
+  //const res=arr[0]
+  //const setRes=arr[1]
+
+
+  // const arr=useState(resList)   // behind the scene in usestate
+  // const [res,setRes]=arr;      //array destrcturing
   return (
     <div className="body">
       <div className="filter">

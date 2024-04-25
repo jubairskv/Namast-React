@@ -167,5 +167,15 @@ named import/export
 
 can i do deafult export with name export both the things in same component?
 
+why react is fast
+react makes Dom operation super fast and efficient DOM manipulation when ever i chanage the state varaible and it update so fast rerender the component so fast and it also as diff algorithm
+
 what is react hooks
+what is virtual Dom 
+virtual dom is representation of actual dom
+wht is Diff algorithm
+diff algorithm is find out difference between two virtual dom the update virtual dom and previous virtual dom and it calclualte the difference it update it actual DOM on every render cycle
+
+what is reconciliation algorithm(react fiber)
+react uses reconciliation algorithm and it also konw as react fiber whenevr you Dom and react create virtual dom
 
