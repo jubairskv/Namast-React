@@ -152,7 +152,7 @@ const Body = () => {
       <div className="res-container">
         {
           res.map(restaurant =>
-            <RestaurantCard key={restaurant?.info?.id} resData={restaurant} />
+            <RestaurantCard key={restaurant?.info?.id} resData={restaurant}  /*passing data as props to child component as resData */ />
           )
         }
         {/* <RestaurantCard resData={resList[0]} />
