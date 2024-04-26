@@ -1,6 +1,6 @@
 import RestaurantCard from "./Restaurantcard"
-import { useState } from "react"
-import resList from "../utils/mockData";
+import { useState,useEffect } from "react"
+//import resList from "../utils/mockData";
 
 // let listofres=[
 //   {
@@ -114,20 +114,36 @@ const Body = () => {
   //let res=[]
 
   //state Varaible res-inital value or default value  setRes-updated value      default value down  it also act as a nrml variable
-  const [res, setRes] = useState(resList);  //function
+  const [res, setRes] = useState([]);  //function
   //const res=arr[0]
   //const setRes=arr[1]
+
+  console.log(res)
 
 
   // const arr=useState(resList)   // behind the scene in usestate
   // const [res,setRes]=arr;      //array destrcturing
+
+ // it works after rendering the component
+  useEffect(()=>{/*callback function */
+   fetchData()
+  },[] /*dependencies*/)
+
+  const fetchData= async()=>{
+    const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+    const json=await data.json()
+    console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
+    setRes(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
+  }
+  
+
   return (
     <div className="body">
       <div className="filter">
         <button
           className="filter-btn"
           onClick={() => {
-            const restList = res.filter((res) => res.card.card.info.avgRating > 4)
+            const restList = res.filter((res) => res.info.avgRating > 4)
             setRes(restList)
           }}>
           Top rated Restaurant
@@ -136,7 +152,7 @@ const Body = () => {
       <div className="res-container">
         {
           res.map(restaurant =>
-            <RestaurantCard key={restaurant.card.card.info.id} resData={restaurant} />
+            <RestaurantCard key={restaurant?.info?.id} resData={restaurant} />
           )
         }
         {/* <RestaurantCard resData={resList[0]} />

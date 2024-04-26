@@ -3,14 +3,15 @@ import { CDN_URL } from "../utils/constant"
 const RestaurantCard = (props) => {
     {/*props to destrcturing*/  {/*resName,cuisine*/ } }
     const { resData } = props
-    const {name,cuisines,avgRating,costForTwo}=resData?.card.card.info
-    const {deliveryTime}=resData?.card.card.info.sla
+    console.log(resData)
+    const {name,cuisines,avgRating,costForTwo}=resData?.info
+    const {deliveryTime}=resData?.info.sla
     console.log(resData)
     //console.log(resName,cuisine)
     //const {resName,cuisine}=props  destrctuing props logic behind
     return (
       <div className="res-card" style={{ background: "#f0f0f0" }}>
-        <img className="res-image" alt="Briyani Image" src={CDN_URL + resData.card.card.info.cloudinaryImageId} />
+        <img className="res-image" alt="Briyani Image" src={CDN_URL + resData.info.cloudinaryImageId} />
         <h3>{name}</h3>
         <h4>{cuisines.join(", ")}</h4>  {/*using props destrcturing*/}
         <h4>{avgRating}Star</h4>
