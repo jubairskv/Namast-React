@@ -1,5 +1,6 @@
 import RestaurantCard from "./Restaurantcard"
 import { useState,useEffect } from "react"
+import Shimmer from "./Shimmer"; 
 //import resList from "../utils/mockData";
 
 // let listofres=[
@@ -117,29 +118,62 @@ const Body = () => {
   const [res, setRes] = useState([]);  //function
   //const res=arr[0]
   //const setRes=arr[1]
+  //wen ever there is a chnage in state variable react render the whole componet very fast-reconciliation
+  const [searchText,setSearchText]=useState("");
+  const[filterCards,setFilterCards]=useState([])
 
-  console.log(res)
+  //console.log(res)
+  //console.log("body render")
 
 
   // const arr=useState(resList)   // behind the scene in usestate
   // const [res,setRes]=arr;      //array destrcturing
 
  // it works after rendering the component
+ //useEffect take  two arrgument one arrow function,depebdencies and this useeffect called after the component render
   useEffect(()=>{/*callback function */
    fetchData()
   },[] /*dependencies*/)
 
-  const fetchData= async()=>{
-    const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
-    const json=await data.json()
-    console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
-    setRes(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
+  const fetchData = async()=>{
+    try{
+      const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+      const json=await data.json()
+      console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
+      //Optional Chanining - ?
+      setRes(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+      setFilterCards(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    } catch(err){
+      console.log(err)
+    }
+   
   }
+
+  //conditional Rendering -replacing into ternary operator
+  {/*if(res.length===0){
+    return <Shimmer/>
+  }*/}
   
 
-  return (
+  //jsx component render 1st after useEffect will render
+  return  res.length===0? <Shimmer/>:/*ternary operator*/(
     <div className="body">
       <div className="filter">
+        <div className="search">
+          <input 
+          type="text" 
+          className="search-box" 
+          value={searchText} /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
+          onChange={(e)=>{setSearchText(e.target.value)}}/>
+          <button onClick={()=>{
+            //filter the res card update the ui
+            //search Text
+            const filterCards=res.filter((res)=>
+              res.info.name.toLowerCase().includes(searchText.toLowerCase())
+            )
+            setFilterCards(filterCards)
+          }}>search</button>
+        </div>
         <button
           className="filter-btn"
           onClick={() => {
@@ -151,7 +185,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         {
-          res.map(restaurant =>
+          filterCards.map(restaurant =>
             <RestaurantCard key={restaurant?.info?.id} resData={restaurant}  /*passing data as props to child component as resData */ />
           )
         }

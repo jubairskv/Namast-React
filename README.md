@@ -179,3 +179,16 @@ diff algorithm is find out difference between two virtual dom the update virtual
 what is reconciliation algorithm(react fiber)
 react uses reconciliation algorithm and it also konw as react fiber whenevr you Dom and react create virtual dom
 
+what is CORS in react?
+what is shimmer UI -fake page untill we get data from API like Skeleton
+what is conditional rendering?
+
+why we using state instead of variable bcz when compoent render state take new value but variable wont take new value this why variable not using in react 
+
+when assign useState as const[res,setRes]=useState("") how const is update in javascript we cant able to update const var but in state how its updating state -when ever you update the state, react consider as like new state -new value each rendering it consider as like new state and react take new value
+
+
+when ever you click the login btn virtual react two dom one is old dom and updated dom then it rendering its updated dom in btn and rerender whole header component and state consider ass like new state and it update this why react is fast this concept also called reconciliationa and diff algorithm
+
+# body .js in search text
+ when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})
