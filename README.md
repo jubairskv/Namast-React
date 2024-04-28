@@ -213,3 +213,26 @@ useEffect(
   },[localState]   //if u pass state as dependencies array whenever the state changes made it will rerender
   (or) if dependencies array is localstat it called every state is updated
  )
+
+ what is react router
+ what is children route
+
+# hanger tag
+<ul>
+<li>
+ <a href="/">Home</a> if u this tag it will referesh the page
+</li>
+</ul>
+
+# Link   [recommended way]
+<ul>
+<li>
+ <Link to="/About">About us</Link> if u use link tag won't referesh the page
+</li>
+</ul> 
+
+what are the two types of routing in web application?
+-client side routing
+-server side routing
+
+what is mean by dynamic routing?

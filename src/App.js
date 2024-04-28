@@ -4,6 +4,10 @@ import Header from "./Components/Header"
 import Body from "./Components/Body";
 import { Provider } from "react-redux";
 import store from "./utils/store";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";   //1st to import this router
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import Error from "./Components/Error";
 
 // const heading1=React.createElement("h1",{id:"title"},"Heading1")
 // const heading2=React.createElement("h2",{id:"title"},"Heading2")
@@ -109,16 +113,56 @@ const functionsComponent = () => {
 // console.log(parent);
 
 const AppLayout = () => {
-  return (
+    return (
 
-    <Provider store={store}>
-    <div className="App">
-      <Header/>
-      <Body/>
-    </div>
-    </Provider>
-  )
-}
+        <Provider store={store}>
+            <div className="App">
+                <Header />
+                <Outlet />
+            </div>
+        </Provider>
+    );
+};
+
+//react router
+const appRouter = createBrowserRouter(
+    [
+        {
+            path: "/",
+            element: <AppLayout />,
+            children: [
+                {
+                    path: "/",
+                    element: <Body />,
+                },
+                {
+                    path: "/About",
+                    element: <About />,   //children route
+                },
+                {
+                    path: "/Contact",
+                    element: <Contact />,
+                },
+
+            ],
+            errorElement: <Error />,
+        },
+        // {
+        //     path:"/About",
+        //     element:<About/>,
+        //     errorElement:<Error/>
+        // },
+        // {
+        //     path:"/Contact",
+        //     element:<Contact/>,
+        //     errorElement:<Error/>
+        // }
+
+    ]
+
+);
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(<AppLayout />)
+root.render(<RouterProvider router={appRouter} />)  //react router component need to add here
 

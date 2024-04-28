@@ -1,6 +1,8 @@
 import RestaurantCard from "./Restaurantcard"
 import { useState,useEffect } from "react"
 import Shimmer from "./Shimmer"; 
+
+
 //import resList from "../utils/mockData";
 
 // let listofres=[
