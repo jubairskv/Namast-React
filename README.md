@@ -179,6 +179,7 @@ diff algorithm is find out difference between two virtual dom the update virtual
 what is reconciliation algorithm(react fiber)
 react uses reconciliation algorithm and it also konw as react fiber whenevr you Dom and react create virtual dom
 
+what is optional chaining
 what is CORS in react?
 what is shimmer UI -fake page untill we get data from API like Skeleton
 what is conditional rendering?
@@ -192,3 +193,22 @@ when ever you click the login btn virtual react two dom one is old dom and updat
 
 # body .js in search text
  when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})
+
+ # useEffect why are passing dependencies
+
+useEffect(
+  ()=>{
+    fetchData()  //without dependencies whenever the component render it rerender
+  })
+
+ useEffect(
+  ()=>{
+    fetchData()
+  },[] //if you pass empty array it will rerender once when componet render after it wont rerender
+ )
+
+ useEffect(
+  ()=>{
+    fetchData()
+  },[localState]   //if u pass state as dependencies array whenever the state changes made it will rerender
+ )

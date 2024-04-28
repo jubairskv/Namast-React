@@ -146,10 +146,33 @@ const Body = () => {
     } catch(err){
       console.log(err)
     }
-   
   }
 
-  //conditional Rendering -replacing into ternary operator
+ {/*  const fetchData = async () => {
+    try {
+      const response = await fetch("https://corsproxy.io/? https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          lat: 12.9351929,
+          lng: 77.62448069999999,
+          is_seo_homepage_enabled: true,
+          page_type: "DESKTOP_WEB_LISTING"
+        })
+      });
+      const json = await response.json();
+      console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+      // Optional Chaining - ?
+      setRes(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+      setFilterCards(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    } catch (err) {
+      console.log(err);
+    }
+  };*/}
+
+  //conditional Rendering - replacing into ternary operator
   {/*if(res.length===0){
     return <Shimmer/>
   }*/}
