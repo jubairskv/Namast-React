@@ -194,21 +194,22 @@ when ever you click the login btn virtual react two dom one is old dom and updat
 # body .js in search text
  when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})
 
- # useEffect why are passing dependencies
+ # useEffect why are passing dependencies - but dependencies is not mandatory for everytime but based on how ur using useeffect
 
 useEffect(
   ()=>{
-    fetchData()  //without dependencies whenever the component render it rerender
+    fetchData()  //if no dependencies array => useEffect is callled on every component render
   })
 
  useEffect(
   ()=>{
     fetchData()
-  },[] //if you pass empty array it will rerender once when componet render after it wont rerender
+  },[] /if no dependencies array is empty => useEffect is called on initial render(just once it called when component render)
  )
 
  useEffect(
   ()=>{
     fetchData()
   },[localState]   //if u pass state as dependencies array whenever the state changes made it will rerender
+  (or) if dependencies array is localstat it called every state is updated
  )

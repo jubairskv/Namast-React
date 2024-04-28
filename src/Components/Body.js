@@ -131,6 +131,10 @@ const Body = () => {
 
  // it works after rendering the component
  //useEffect take  two arrgument one arrow function,depebdencies and this useeffect called after the component render
+
+ //if no dependencies array is empty => useEffect is called on initial render(just once it called when component render)
+ // if u pass state as dependencies array whenever the state changes made it will rerender
+ //if dependencies array is localstat it called every state is updated
   useEffect(()=>{/*callback function */
    fetchData()
   },[] /*dependencies*/)
