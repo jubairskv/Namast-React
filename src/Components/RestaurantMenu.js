@@ -55,7 +55,7 @@ const RestaurantMenu = () => {
                     <li key={item.card.info.id}>
                         {item.card.info.name} -
                         {"Rs. "}
-                        {item.card.info.price / 100}
+                        {item.card.info.defaultPrice / 100 || item.card.info.price /100 }
                     </li>
                 ))}
             </ul>
