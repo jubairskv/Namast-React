@@ -6,4 +6,6 @@ export const CDN_URL =
 
  export const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId="
 
- export const swigg_url = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=793210&catalog_qa=undefined&isMenuUx4=true&submitAction=ENTER"
+ console.log(MENU_API)
+
+ export const swigg_url = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=393840&catalog_qa=undefined&isMenuUx4=true&submitAction=ENTER"
