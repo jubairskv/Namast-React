@@ -235,4 +235,5 @@ what are the two types of routing in web application?
 -client side routing
 -server side routing
 
+waht is react router?
 what is mean by dynamic routing?
