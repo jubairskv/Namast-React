@@ -18,8 +18,8 @@ class About extends Component {    //React.component
                 <h1>this is About PAge</h1>
                 <p>developed by jubair</p>
                 <User name={"juabir kasim"} location={"salem"} />
-                <UserClass name={"jubair kasim 1st child"} />
-                <UserClass name={"jubair kasim 2nd child"} />
+                {/* <UserClass name={"jubair kasim 1st child"} />
+                <UserClass name={"jubair kasim 2nd child"} /> */}
             </div>
         );
     

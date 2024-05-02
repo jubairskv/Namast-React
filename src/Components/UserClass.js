@@ -25,9 +25,24 @@ class UserClass extends React.Component{
        this.setState({
         userInfo:json
        })
+
+       this.timer = setInterval(()=>{
+        console.log("jubair")
+    },1000)
     }
-    componentDidUpdate(){
-        console.log("update")
+    componentDidUpdate(prevProps,prevState){  //how you pass dependdencies in class component
+        //componetDidUpdate called each render like useEffect
+        if(this.state.count!==prevState.count){
+
+        }
+        if(this.state.count2!==prevState.count2){
+
+        }
+        console.log("componentDidDpdate")
+    }
+    componentWillUnmount(){
+        clearInterval(this.timer)
+        console.log("ComponentWillUnmount")
     }
     render() {
         //console.log(this.props .name + " 1st child render")
