@@ -2,6 +2,7 @@ import RestaurantCard from "./Restaurantcard"
 import { useState,useEffect } from "react"
 import Shimmer from "./Shimmer"; 
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 //import resList from "../utils/mockData";
@@ -183,6 +184,16 @@ const Body = () => {
   {/*if(res.length===0){
     return <Shimmer/>
   }*/}
+
+  const onlineStatus =useOnlineStatus();
+
+  if(onlineStatus===false)
+    return(
+      <h1>
+        Looks like you're offline!!! please check your network connection;
+      </h1>
+    )
+  
   
 
   //jsx component render 1st after useEffect will render
