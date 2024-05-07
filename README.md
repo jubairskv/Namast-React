@@ -237,3 +237,5 @@ what are the two types of routing in web application?
 
 waht is react router?
 what is mean by dynamic routing?
+what is custom hook
+what is lazy loading

@@ -1,30 +1,31 @@
-import { useEffect, useState } from "react"
-import { MENU_API } from "../utils/constant";
+// import { useEffect, useState } from "react"
+// import { MENU_API } from "../utils/constant";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";  //this is used for to  find resId in router navition link as different id navigation for more component
-import { MENU_API } from "../utils/constant";
+import useRestarauntMenu from "../utils/useRestaursntMenu";
 
 const RestaurantMenu = () => {
 
-    const [resInfo, setResInfo] = useState(null);
+   // const [resInfo, setResInfo] = useState(null);
 
-    console.log(resInfo)
+    //console.log(resInfo)
 
     const resId = useParams();
-    console.log(resId)
+    //console.log(resId)
+    
+    const resInfo =useRestarauntMenu(resId)
 
+    // useEffect(() => {
+    //     fetchMenu();
+    // }, [])
 
-    useEffect(() => {
-        fetchMenu();
-    }, [])
-
-    const fetchMenu = async () => {
-        //const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=393840")
-        const data =await fetch(`${MENU_API}` + `${resId?.resId}`)   {/*resId:{resId=idnumber}*/} 
-        const json = await data.json();
-        console.log(json)
-        setResInfo(json.data)
-    }
+    // const fetchMenu = async () => {
+    //     //const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=393840")
+    //     const data =await fetch(`${MENU_API}` + `${resId?.resId}`)   {/*resId:{resId=idnumber}*/} 
+    //     const json = await data.json();
+    //     console.log(json)
+    //     setResInfo(json.data)
+    // }
 
     if (resInfo === null) return <Shimmer />;   //shimmer UI
 
