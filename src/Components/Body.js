@@ -185,14 +185,14 @@ const Body = () => {
     return <Shimmer/>
   }*/}
 
-  const onlineStatus =useOnlineStatus();
+  const onlineStatus = useOnlineStatus();
 
   if(onlineStatus===false)
     return(
       <h1>
         Looks like you're offline!!! please check your network connection;
       </h1>
-    )
+    );
   
   
 

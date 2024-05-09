@@ -5,36 +5,39 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 const Header = () => {
-  let [btnName,setbtnName]=useState("Login")
+  let [btnName, setbtnName] = useState("Login")
   //console.log("Header render");
   const OnlineStatus = useOnlineStatus();
 
-    return (
-      <div className="header">
-        <div className="logo-conatiner">
-          <img className="logo" src={LOGO_URL} />
-        </div>
-        <div className="nav-items">
-          <ul>
-          <li>
-              <Link to="/Contact">OnlineStatus:{OnlineStatus? "✅" :"🔴" }</Link>
-            </li>
-            <li>
-              {/* <a href="/">Home</a> */}
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              {/* <a href="/About">About us</a> */}
-              <Link to="/About">About us</Link>
-            </li>
-            <li>
-              <Link to="/Contact">Contact us</Link>
-            </li>
-            <li>Cart</li>
-            <button className="login-btn" onClick={()=>{btnName==="Login" ? setbtnName("Logout"):setbtnName("Login")}}>{btnName}</button>
-          </ul>
-        </div>
+
+  
+
+  return (
+    <div className="header">
+      <div className="logo-conatiner">
+        <img className="logo" src={LOGO_URL} />
       </div>
-    )
-  }
-  export default Header;
+      <div className="nav-items">
+        <ul>
+          <li>
+            <Link to="/Contact">OnlineStatus:{OnlineStatus ? "✅" : "🔴"}</Link>
+          </li>
+          <li>
+            {/* <a href="/">Home</a> */}
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            {/* <a href="/About">About us</a> */}
+            <Link to="/About">About us</Link>
+          </li>
+          <li>
+            <Link to="/Grocery">Grocery</Link>
+          </li>
+          <li>Cart</li>
+          <button className="login-btn" onClick={() => { btnName === "Login" ? setbtnName("Logout") : setbtnName("Login") }}>{btnName}</button>
+        </ul>
+      </div>
+    </div>
+  )
+}
+export default Header;
