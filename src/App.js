@@ -119,6 +119,8 @@ const functionsComponent = () => {
 
 const Grocery = lazy(() => import("./Components/Grocery"))
 
+const About = lazy(() => import("./Components/About"))
+
 const AppLayout = () => {
     return (
 
@@ -144,7 +146,7 @@ const appRouter = createBrowserRouter(
                 },
                 {
                     path: "/about",
-                    element: <About />,   //children route
+                    element: <Suspense fallback={<h1>Loading...</h1>}><About /></Suspense>   //children route
                 },
                 {
                     path: "/contact",
