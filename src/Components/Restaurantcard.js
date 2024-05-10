@@ -10,9 +10,9 @@ const RestaurantCard = (props) => {
     //console.log(resName,cuisine)
     //const {resName,cuisine}=props  destrctuing props logic behind
     return (
-      <div className="res-card" style={{ background: "#f0f0f0" }}>
-        <img className="res-image" alt="Briyani Image" src={CDN_URL + resData.info.cloudinaryImageId} />
-        <h3>{name}</h3>
+      <div className="m-4 p-4 w-[250px] rounded-lg" style={{ background: "#f0f0f0" }}>
+        <img className="rounded-lg h-36 w-56" alt="Briyani Image" src={CDN_URL + resData.info.cloudinaryImageId} />
+        <h3 className="font-bold py-2 text-xl">{name}</h3>
         <h4>{cuisines.join(", ")}</h4>  {/*using props destrcturing*/}
         <h4>{avgRating}Star</h4>
         <h4>{costForTwo}</h4>

@@ -199,14 +199,14 @@ const Body = () => {
   //jsx component render 1st after useEffect will render
   return  res.length===0? <Shimmer/>:/*ternary operator*/(
     <div className="body">
-      <div className="filter">
-        <div className="search">
+      <div className="filter flex">
+        <div className="search m-4 p-4">
           <input 
           type="text" 
-          className="search-box" 
+          className="border border-solid border-black" 
           value={searchText} /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
           onChange={(e)=>{setSearchText(e.target.value)}}/>
-          <button onClick={()=>{
+          <button  className="px-4 py-1 bg-green-100 m-4 rounded-lg" onClick={()=>{
             //filter the res card update the ui
             //search Text
             const filterCards=res.filter((res)=>
@@ -215,16 +215,19 @@ const Body = () => {
             setFilterCards(filterCards)
           }}>search</button>
         </div>
+        <div className=" flex items-center m-4 p-4 ">
         <button
-          className="filter-btn"
+          className="px-4 py-2 bg-gray-100 rounded-lg"
           onClick={() => {
             const restList = res.filter((res) => res.info.avgRating > 4)
             setRes(restList)
           }}>
           Top rated Restaurant
         </button>
+        </div>
+        
       </div>
-      <div className="res-container">
+      <div className="flex flex-wrap">
         {
           filterCards.map(restaurant =>
            <Link key={restaurant?.info?.id} to={"restaurant/" + restaurant?.info?.id }><RestaurantCard  resData={restaurant} /*passing data as props to child component as resData */ /></Link>
