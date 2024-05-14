@@ -1,6 +1,6 @@
 import RestaurantCard from "./Restaurantcard"
-import { useState,useEffect } from "react"
-import Shimmer from "./Shimmer"; 
+import { useState, useEffect } from "react"
+import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
@@ -123,40 +123,40 @@ const Body = () => {
   //const res=arr[0]
   //const setRes=arr[1]
   //wen ever there is a chnage in state variable react render the whole componet very fast-reconciliation
-  const [searchText,setSearchText]=useState("");
-  const[filterCards,setFilterCards]=useState([])
+  const [searchText, setSearchText] = useState("");
+  const [filterCards, setFilterCards] = useState([])
 
   //console.log(res)
-  //console.log("body render")
+  console.log("body render", res)
 
 
   // const arr=useState(resList)   // behind the scene in usestate
   // const [res,setRes]=arr;      //array destrcturing
 
- // it works after rendering the component
- //useEffect take  two arrgument one arrow function,depebdencies and this useeffect called after the component render
+  // it works after rendering the component
+  //useEffect take  two arrgument one arrow function,depebdencies and this useeffect called after the component render
 
- //if no dependencies array is empty => useEffect is called on initial render(just once it called when component render)
- // if u pass state as dependencies array whenever the state changes made it will rerender
- //if dependencies array is localstat it called every state is updated
-  useEffect(()=>{/*callback function */
-   fetchData()
-  },[] /*dependencies*/)
+  //if no dependencies array is empty => useEffect is called on initial render(just once it called when component render)
+  // if u pass state as dependencies array whenever the state changes made it will rerender
+  //if dependencies array is localstat it called every state is updated
+  useEffect(() => {/*callback function */
+    fetchData()
+  }, [] /*dependencies*/)
 
-  const fetchData = async()=>{
-    try{
-      const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
-      const json=await data.json()
+  const fetchData = async () => {
+    try {
+      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+      const json = await data.json()
       console.log(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants)
       //Optional Chanining - ?
       setRes(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
       setFilterCards(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-    } catch(err){
+    } catch (err) {
       console.log(err)
     }
   }
 
- {/*  const fetchData = async () => {
+  {/*  const fetchData = async () => {
     try {
       const response = await fetch("https://corsproxy.io/? https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING", {
         method: "POST",
@@ -187,59 +187,59 @@ const Body = () => {
 
   const onlineStatus = useOnlineStatus();
 
-  if(onlineStatus===false)
-    return(
+  if (onlineStatus === false)
+    return (
       <h1>
         Looks like you're offline!!! please check your network connection;
       </h1>
     );
-  
-  
+
+
 
   //jsx component render 1st after useEffect will render
-  return  res.length===0? <Shimmer/>:/*ternary operator*/(
+  return res.length === 0 ? <Shimmer /> :/*ternary operator*/(
     <div className="body">
       <div className="filter flex">
         <div className="search m-4 p-4">
-          <input 
-          type="text" 
-          className="border border-solid border-black" 
-          value={searchText} /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
-          onChange={(e)=>{setSearchText(e.target.value)}}/>
-          <button  className="px-4 py-1 bg-green-100 m-4 rounded-lg" onClick={()=>{
+          <input
+            type="text"
+            className="border border-solid border-black"
+            value={searchText} /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
+            onChange={(e) => { setSearchText(e.target.value) }} />
+          <button className="px-4 py-1 bg-green-100 m-4 rounded-lg" onClick={() => {
             //filter the res card update the ui
             //search Text
-            const filterCards=res.filter((res)=>
+            const filterCards = res.filter((res) =>
               res.info.name.toLowerCase().includes(searchText.toLowerCase())
             )
             setFilterCards(filterCards)
           }}>search</button>
         </div>
         <div className=" flex items-center m-4 p-4 ">
-        <button
-          className="px-4 py-2 bg-gray-100 rounded-lg"
-          onClick={() => {
-            const restList = res.filter((res) => res.info.avgRating > 4)
-            setRes(restList)
-          }}>
-          Top rated Restaurant
-        </button>
+          <button
+            className="px-4 py-2 bg-gray-100 rounded-lg"
+            onClick={() => {
+              const restList = res.filter((res) => res.info.avgRating > 4)
+              setRes(restList)
+            }}>
+            Top rated Restaurant
+          </button>
         </div>
-        
+
       </div>
       <div className="flex flex-wrap">
         {
           filterCards.map(restaurant =>
-           <Link key={restaurant?.info?.id} to={"restaurant/" + restaurant?.info?.id }><RestaurantCard  resData={restaurant} /*passing data as props to child component as resData */ /></Link>
+            <Link key={restaurant?.info?.id} to={"restaurant/" + restaurant?.info?.id}><RestaurantCard resData={restaurant} /*passing data as props to child component as resData */ /></Link>
           )
-          
+
         },
-         {console.log(filterCards)}
+        {console.log(filterCards)}
         {/* <RestaurantCard resData={resList[0]} />
           <RestaurantCard resData={resList[1]} />
           {console.log(resList)} */}
         {/*<RestaurantCard resName="KFC" cuisine="Briyani, North Indian, Asian"/>*/}
-        {/* <RestaurantCard resName="Mc-Donals" cuisine="Briyani, North Indian, Asian"/> */}        
+        {/* <RestaurantCard resName="Mc-Donals" cuisine="Briyani, North Indian, Asian"/> */}
       </div>
     </div>
   )
