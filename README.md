@@ -242,3 +242,4 @@ what is lazy loading
 what is higher order component
 waht is conrolled and uncontrolled componet
 know how to manage data in react application
+what is Accoridan UI component?
