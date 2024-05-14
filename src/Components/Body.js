@@ -1,4 +1,4 @@
-import RestaurantCard from "./Restaurantcard"
+import RestaurantCard ,{withPromotedLabel} from "./Restaurantcard"
 import { useState, useEffect } from "react"
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -129,7 +129,7 @@ const Body = () => {
   //console.log(res)
   console.log("body render", res)
 
-
+  //const RestaurantcardPromoted = withPromotedLabel(RestaurantCard)
   // const arr=useState(resList)   // behind the scene in usestate
   // const [res,setRes]=arr;      //array destrcturing
 
@@ -230,7 +230,11 @@ const Body = () => {
       <div className="flex flex-wrap">
         {
           filterCards.map(restaurant =>
-            <Link key={restaurant?.info?.id} to={"restaurant/" + restaurant?.info?.id}><RestaurantCard resData={restaurant} /*passing data as props to child component as resData */ /></Link>
+            <Link key={restaurant?.info?.id} 
+            to={"restaurant/" + restaurant?.info?.id}>
+              {/* {restaurant.data.promoted ?
+              <RestaurantcardPromoted resData={restaurant}/>:} */}
+              <RestaurantCard resData={restaurant} /*passing data as props to child component as resData */ /></Link>
           )
 
         },

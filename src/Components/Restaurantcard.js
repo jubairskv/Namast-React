@@ -21,6 +21,21 @@ const RestaurantCard = (props) => {
     )
   }
   
+  //higher order component
+
+  //input - RestaurantCard ==>RestaurantCardPromoted
+
+  // export const withPromotedLabel =(RestaurantCard)=>{
+  //   return (props)=>{
+  //     return (
+  //       <div>
+  //         <lable className="absolute bg-black text-white m-1 p-2 rounded-lg">promoted</lable>
+  //         <RestaurantCard {...props}/>
+  //       </div>
+  //     )
+  //   }
+
+  // }
   // const RestaurantCard=(props)=>{
   //const {resName,cuisine}=props  destrctuing props logic behind
   //     console.log(props)

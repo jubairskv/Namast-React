@@ -239,3 +239,6 @@ waht is react router?
 what is mean by dynamic routing?
 what is custom hook
 what is lazy loading
+what is higher order component
+waht is conrolled and uncontrolled componet
+know how to manage data in react application
