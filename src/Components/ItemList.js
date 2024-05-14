@@ -4,10 +4,10 @@ const ItemList=({items})=>{
         <div>
           {
             items.map((items)=>(
-                <div key={items.card.info.id}>
-                    <div>
+                <div key={items.card.info.id} className="p-2 m-2 border-gray-200 border-b-2 text-left">
+                    <div className="py-2">
                         <span>{items.card.info.name}</span>
-                        <span>{items.card.info.price}</span>
+                        <span> - ₹{items.card.info.price/100}</span>
                     </div>
                     <p>{items.card.info.description}</p>
                 </div>
