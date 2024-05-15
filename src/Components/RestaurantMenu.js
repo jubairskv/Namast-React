@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const RestaurantMenu = () => {
 
-    const [showIndex , setShowIndex] = useState(0);
+    const [showIndex , setShowIndex] = useState(null);
 
    // const [resInfo, setResInfo] = useState(null);
 
