@@ -4,8 +4,11 @@ import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";  //this is used for to  find resId in router navition link as different id navigation for more component
 import useRestarauntMenu from "../utils/useRestaursntMenu";
 import RestaurantCategory from "./RestaurantCategory";
+import { useState } from "react";
 
 const RestaurantMenu = () => {
+
+    const [showIndex , setShowIndex] = useState(0);
 
    // const [resInfo, setResInfo] = useState(null);
 
@@ -52,8 +55,14 @@ const RestaurantMenu = () => {
         <div className="text-center">
             <h1 className="font-bold my-5 text-2xl">{name}</h1>
             <p className="font-bold text-lg">{cuisines.join(", ")} - {costForTwoMessage}</p>
-            {categories.map((category)=>
-            <RestaurantCategory key={category.card.card.id} data={category?.card?.card}/>)}
+            {categories.map((category, index)=>
+            <RestaurantCategory
+             key={category.card.card.id} 
+             data={category?.card?.card}
+             showItem={index === showIndex ? true : false}
+             setShowIndex ={()=>setShowIndex(index)}/>)}
+
+
         </div>
     )
 }

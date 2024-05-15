@@ -243,3 +243,6 @@ what is higher order component
 waht is conrolled and uncontrolled componet
 know how to manage data in react application
 what is Accoridan UI component?
+you can't able to pass data from child component to pareent component
+
+with help of uncontrolled componet we can pass data from child component to parent componet passing data as props state its not own state its tricky state
