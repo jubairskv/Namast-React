@@ -248,3 +248,6 @@ you can't able to pass data from child component to pareent component
 with help of uncontrolled componet we can pass data from child component to parent componet passing data as props state its not own state its tricky state
 
 what is lifting state up? --important topic in accoridan ui component
+what is props drilling?
+to avoid props drilling we use react context
+what is react context

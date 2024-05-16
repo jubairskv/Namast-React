@@ -1,3 +1,5 @@
+import { useContext } from "react"
+import UserContext from "../utils/UserContext"
 import { CDN_URL } from "../utils/constant"
 
 const RestaurantCard = (props) => {
@@ -7,6 +9,8 @@ const RestaurantCard = (props) => {
     const {name,cuisines,avgRating,costForTwo}=resData?.info
     const {deliveryTime}=resData?.info.sla
     console.log(resData)
+
+    const {LoggedInUser} = useContext(UserContext)    
     //console.log(resName,cuisine)
     //const {resName,cuisine}=props  destrctuing props logic behind
     return (
@@ -17,6 +21,7 @@ const RestaurantCard = (props) => {
         <h4>{avgRating}Star</h4>
         <h4>{costForTwo}</h4>
         <h4>{deliveryTime}</h4>
+        <h4>User : {LoggedInUser}</h4>
       </div>
     )
   }
