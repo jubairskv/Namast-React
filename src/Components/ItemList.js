@@ -1,10 +1,11 @@
 import { CDN_URL } from "../utils/constant";
 
-const ItemList = (props) => {
-    const { items } = props
+const ItemList = ({items,dummy}) => {
+    console.log(dummy)     //props drilling
+    //const { items } = props
     //const {id,name,price,description} = items?.card?.info
     // console.log(id,name,price,des)
-    console.log(props)
+    //console.log(props)
     return (
         <div>
             {

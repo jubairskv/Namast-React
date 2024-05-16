@@ -2,7 +2,7 @@ import ItemList from "./ItemList";
 import { useState } from "react";
 
 
-const RestaurantCategory = ({ data ,showItem ,setShowIndex}) => {  //controlled component showItem
+const RestaurantCategory = ({ data ,showItem ,setShowIndex ,dummy}) => {  //controlled component showItem
     // const [showItem ,setShowItem] = useState(false)
 
      const handleClick = ()=>{
@@ -18,7 +18,7 @@ const RestaurantCategory = ({ data ,showItem ,setShowIndex}) => {  //controlled 
                     <span>⬇️</span>
                 </div>
                 {showItem &&
-                 <ItemList items={data.itemCards} />
+                 <ItemList items={data.itemCards} dummy={dummy} />
                  }
             </div>
         </div>

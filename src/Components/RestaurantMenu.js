@@ -10,6 +10,8 @@ const RestaurantMenu = () => {
 
     const [showIndex , setShowIndex] = useState(null);
 
+    const dummy ="dummy"
+
    // const [resInfo, setResInfo] = useState(null);
 
     //console.log(resInfo)
@@ -60,10 +62,11 @@ const RestaurantMenu = () => {
              key={category.card.card.id} 
              data={category?.card?.card}
              showItem={index === showIndex ? true : false}
-             setShowIndex ={()=>setShowIndex(index)}/>)}
+             setShowIndex ={()=>setShowIndex(index)}
+             dummy={dummy}/>)}
 
 
         </div>
     )
 }
-export default RestaurantMenu
+export default RestaurantMenu;
