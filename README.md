@@ -251,3 +251,7 @@ what is lifting state up? --important topic in accoridan ui component
 what is props drilling?
 to avoid props drilling we use react context
 what is react context
+what is difference b/w react context and redux
+
+when we need to manage state or data for small application go for context 
+when your application is big go for redux

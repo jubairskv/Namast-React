@@ -1,4 +1,4 @@
-import React, { Suspense, lazy} from "react";
+import React, { Suspense, lazy, useEffect, useState} from "react";
 import ReactDOM from "react-dom/client"
 import Header from "./Components/Header"
 import Body from "./Components/Body";
@@ -11,7 +11,6 @@ import Error from "./Components/Error";
 import RestaurantMenu from "./Components/RestaurantMenu"
 import Shimmer from "./Components/Shimmer";
 import UserContext from "./utils/UserContext";
-import { useState , useEffect} from "react";
 //import Grocery from "./Components/Grocery";
 
 // const heading1=React.createElement("h1",{id:"title"},"Heading1")
@@ -123,27 +122,32 @@ const Grocery = lazy(() => import("./Components/Grocery"))
 
 const About = lazy(() => import("./Components/About"))
 
-const [userName ,setUserName] = useState();
 
-useEffect(()=>{
-    const data={
-        name:"jubair Kasim"
-    }
-    setUserName(data.name)
 
-},[])
 
 const AppLayout = () => {
+    const [userName ,setUserName] = useState("");
+
+    useEffect(()=>{
+        const data={
+            name:"jubair Kasim"
+        }
+        setUserName(data.name)
+    
+    },[])
+    
     return (
 
-        // <Provider store={store}>
-            <UserContext.Provider value={{LoggedInUser:userName}}>
+         //<Provider store={store}>
+            <UserContext.Provider value={{LoggedInUser:userName ,setUserName}}>  {/* jubair Kasim at app level */}
             <div className="App">
+           {/* <UserContext.Provider value={{LoggedInUser:"jubair SKV"}}>  jubair skv at heeader level */}
                 <Header />
+              {/*  </UserContext.Provider>*/} 
                 <Outlet />
             </div>
             </UserContext.Provider>
-        // </Provider>
+         //</Provider>
     );
 };
 

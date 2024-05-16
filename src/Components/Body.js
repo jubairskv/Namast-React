@@ -1,8 +1,9 @@
 import RestaurantCard ,{withPromotedLabel} from "./Restaurantcard"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext"
 
 
 //import resList from "../utils/mockData";
@@ -185,6 +186,8 @@ const Body = () => {
     return <Shimmer/>
   }*/}
 
+  const {setUserName,LoggedInUser} =useContext(UserContext);
+
   const onlineStatus = useOnlineStatus();
 
   if (onlineStatus === false)
@@ -224,6 +227,15 @@ const Body = () => {
             }}>
             Top rated Restaurant
           </button>
+        </div>
+        <div className="flex m-4 p-4 items-center ">
+          <label>
+             username : 
+          </label>
+          <input className="border border-black "
+          value={LoggedInUser}
+          onChange={(e)=>setUserName(e.target.value)}/>
+
         </div>
 
       </div>
