@@ -13,8 +13,8 @@ const cartSlice=createSlice({             //store data
         removeItem:(state,action)=>{
             state.items.pop();
         },
-        clearCart:(state)=>{
-            state.items = []
+        clearCart:(state,action)=>{
+            state.items.length = 0;
         },
     },
 });

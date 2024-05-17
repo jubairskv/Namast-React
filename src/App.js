@@ -2,8 +2,8 @@ import React, { Suspense, lazy, useEffect, useState} from "react";
 import ReactDOM from "react-dom/client"
 import Header from "./Components/Header"
 import Body from "./Components/Body";
-//import { Provider } from "react-redux";
-//import store from "./utils/store";
+import { Provider } from "react-redux";
+import store from "./utils/store";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";   //1st to import this router
 import About from "./Components/About";
 import Contact from "./Components/Contact";
@@ -138,7 +138,7 @@ const AppLayout = () => {
     
     return (
 
-         //<Provider store={store}>
+         <Provider store={store}>
             <UserContext.Provider value={{LoggedInUser:userName ,setUserName}}>  {/* jubair Kasim at app level */}
             <div className="App">
            {/* <UserContext.Provider value={{LoggedInUser:"jubair SKV"}}>  jubair skv at heeader level */}
@@ -147,7 +147,7 @@ const AppLayout = () => {
                 <Outlet />
             </div>
             </UserContext.Provider>
-         //</Provider>
+         </Provider>
     );
 };
 

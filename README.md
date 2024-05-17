@@ -231,7 +231,7 @@ useEffect(
 </li>
 </ul> 
 
-what are the two types of routing in web application?
+ # what are the two types of routing in web application?
 -client side routing
 -server side routing
 
@@ -255,3 +255,18 @@ what is difference b/w react context and redux
 
 when we need to manage state or data for small application go for context 
 when your application is big go for redux
+ 
+# Redux Toolkit
+ -install @reduxjs/toolkit and react-redux
+ -build our store
+ -connect our store to our app
+ -slice(cartSlice)
+ -dispatch(action)
+ -reducer function
+ -selector
+
+what is diff b/w three things
+ onClick={()=>handleAddItem(items)}
+ onClick={handleAddItem}
+ onClick={handleAddItem(items)}
+

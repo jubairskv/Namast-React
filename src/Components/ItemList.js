@@ -1,4 +1,6 @@
+import { useDispatch } from "react-redux";
 import { CDN_URL } from "../utils/constant";
+import { addItem } from "../utils/cartSlice";
 
 const ItemList = ({items,dummy}) => {
     console.log(dummy)     //props drilling
@@ -6,6 +8,13 @@ const ItemList = ({items,dummy}) => {
     //const {id,name,price,description} = items?.card?.info
     // console.log(id,name,price,des)
     //console.log(props)
+
+    const dispatch = useDispatch();
+
+    const handleAddItem = ()=>{
+        //distpact(action)
+        dispatch(addItem(items))
+    }
     return (
         <div>
             {
@@ -22,7 +31,8 @@ const ItemList = ({items,dummy}) => {
                         <div className=" w-3/12 p-4">
                             
                             <div className="absolute ">
-                            <button className="p-2 mx-10 bg-lime-400 shadow-lg m-auto rounded-lg">Add +</button>
+                            <button className="p-2 mx-10 bg-lime-400 shadow-lg m-auto rounded-lg"
+                             onClick={()=>handleAddItem(items)}>Add +</button>
                             </div>
                             <img src={CDN_URL + items.card.info.imageId} className="w-full" />
                             

@@ -3,6 +3,8 @@ import { useContext, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
+import store from "../utils/store";
 
 
 const Header = () => {
@@ -14,6 +16,10 @@ const Header = () => {
   console.log(LoggedInUser)
 
 
+  //subcribing to the sore using selector
+
+  const cartItems = useSelector((store)=>store.cart.items);
+  console.log(cartItems)
   
 
   return (
@@ -40,8 +46,11 @@ const Header = () => {
           <li className="px-4">
             <Link to="/Grocery">Grocery</Link>
           </li>
-          <li className="px-4">Cart</li>
-          <button className="login-btn" onClick={() => { btnName === "Login" ? setbtnName("Logout") : setbtnName("Login") }}>{btnName}</button>
+          <li className="px-4 font-bold text-xl ">Cart - ({cartItems.length} items)</li>
+          <button className="login-btn"
+           onClick={() => { btnName === "Login" ? 
+           setbtnName("Logout") : 
+           setbtnName("Login") }}>{btnName}</button>
           <li className="px-4 font-bold">{LoggedInUser}</li>
         </ul>
       </div>
