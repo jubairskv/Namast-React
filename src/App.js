@@ -12,6 +12,7 @@ import RestaurantMenu from "./Components/RestaurantMenu"
 import Shimmer from "./Components/Shimmer";
 import UserContext from "./utils/UserContext";
 //import Grocery from "./Components/Grocery";
+import Cart from "./Components/Cart";
 
 // const heading1=React.createElement("h1",{id:"title"},"Heading1")
 // const heading2=React.createElement("h2",{id:"title"},"Heading2")
@@ -177,7 +178,11 @@ const appRouter = createBrowserRouter(
                 {
                     path:"/restaurant/:resId",
                     element:<RestaurantMenu/>
-                }
+                },
+                {
+                    path: "/cart",
+                    element: <Cart />,
+                },
 
             ],
             errorElement: <Error />,

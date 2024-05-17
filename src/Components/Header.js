@@ -46,7 +46,7 @@ const Header = () => {
           <li className="px-4">
             <Link to="/Grocery">Grocery</Link>
           </li>
-          <li className="px-4 font-bold text-xl ">Cart - ({cartItems.length} items)</li>
+          <li className="px-4 font-bold text-xl "> <Link to="/cart">Cart({cartItems.length}items)</Link> </li>
           <button className="login-btn"
            onClick={() => { btnName === "Login" ? 
            setbtnName("Logout") : 
