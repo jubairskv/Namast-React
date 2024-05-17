@@ -270,3 +270,7 @@ what is diff b/w three things
  onClick={handleAddItem}
  onClick={handleAddItem(items)}
 
+
+what is middleware in old version of redux
+what is thunk in old version of redux
+what is immer library in redux
