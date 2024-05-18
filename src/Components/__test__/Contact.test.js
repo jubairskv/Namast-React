@@ -9,3 +9,11 @@ test("should load contact us ccomponent", ()=>{
      //asseration
     expect(heading).toBeInTheDocument();
 })
+
+test("should load button inside contact us ccomponent", ()=>{
+    render(<Contact/>)
+
+    const button = screen.getByText("Submit");
+     //asseration
+    expect(button).toBeInTheDocument();
+})
