@@ -290,4 +290,7 @@ what is immer library in redux
   -.parcelrc file   --config
   -npm run test
   -jest config npx jest --init 
-  -install jsdom library  -npm install --save-dev jest-environment-jsdom
+  -install jsdom library  -npm install --save-dev  -jest-environment-jsdom
+  -npm i -D @babel/present-react
+  -include this in config into the babel file
+  -install @testing-library/jest-dom
