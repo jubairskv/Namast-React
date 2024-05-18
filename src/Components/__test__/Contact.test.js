@@ -20,7 +20,7 @@ describe("contact us page test casese" , ()=>{    //multiple test case
         expect(button).toBeInTheDocument();
     })
     
-    test("should load name inside contact us ccomponent", ()=>{
+    it("should load name inside contact us ccomponent", ()=>{
         render(<Contact/>)
     
         const inputName = screen.getByPlaceholderText("name")
