@@ -274,3 +274,20 @@ what is diff b/w three things
 what is middleware in old version of redux
 what is thunk in old version of redux
 what is immer library in redux
+
+# types of testing(developer)
+  - unit testing                 //developer main focus is 1st 2tu testing
+  - integration testing
+  - End to End testing (e2e)
+
+# testing configuation
+  -react testing libray  npm i -D @testing-library/react
+  -jest framework npm i -D jest
+  -using babel need to install additional dependencies
+  -npm install --save-dev babel-jest @babel/core @babel/preset-env
+  -config babel file
+  -babel.config.js
+  -.parcelrc file   --config
+  -npm run test
+  -jest config npx jest --init 
+  -install jsdom library  -npm install --save-dev jest-environment-jsdom
