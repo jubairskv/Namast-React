@@ -1,5 +1,5 @@
 import { LOGO_URL } from "../utils/constant";
-import { useContext, useState, useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
@@ -13,13 +13,13 @@ const Header = () => {
   const OnlineStatus = useOnlineStatus();
 
   const {LoggedInUser}= useContext(UserContext)
-  console.log(LoggedInUser)
+  //console.log(LoggedInUser)
 
 
   //subcribing to the sore using selector
 
   const cartItems = useSelector((store)=>store.cart.items);
-  console.log(cartItems)
+  //console.log(cartItems)
   
 
   return (
