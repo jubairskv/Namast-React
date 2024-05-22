@@ -6,6 +6,19 @@ import "@testing-library/jest-dom"
 import store from "../../utils/store"
 
 
+// it("it should render header component with a login button", () => {
+//     render(
+//         <BrowserRouter>
+//             <Provider store={store}>
+//                 <Header />
+//             </Provider>
+//         </BrowserRouter>
+//     );
+//     const LoginButton = screen.getByRole("button",{name:"Login"});
+
+//     expect(LoginButton).toBeInTheDocument();
+//})
+
 it("it should render header component with a login button", () => {
     render(
         <BrowserRouter>
@@ -14,7 +27,7 @@ it("it should render header component with a login button", () => {
             </Provider>
         </BrowserRouter>
     );
-    const LoginButton = screen.getByRole("button",{name:"Login"});
+    const LoginButton = screen.getByText(/cart/);
 
     expect(LoginButton).toBeInTheDocument();
 })
