@@ -5,16 +5,16 @@ import { CDN_URL } from "../utils/constant"
 const RestaurantCard = (props) => {
     {/*props to destrcturing*/  {/*resName,cuisine*/ } }
     const { resData } = props
-    console.log(resData)
-    const {name,cuisines,avgRating,costForTwo}=resData?.info
+    //console.log(resData)
+    const {name, cuisines, avgRating, costForTwo}=resData?.info
     const {deliveryTime}=resData?.info.sla
-    console.log(resData)
+    //console.log(resData)
 
     const {LoggedInUser} = useContext(UserContext)    
     //console.log(resName,cuisine)
     //const {resName,cuisine}=props  destrctuing props logic behind
     return (
-      <div className="m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-300">
+      <div data-testId="resCard" className="m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-300">
         <img className="rounded-lg h-36 w-56" alt="Briyani Image" src={CDN_URL + resData.info.cloudinaryImageId} />
         <h3 className="font-bold py-2 text-xl">{name}</h3>
         <h4>{cuisines.join(", ")}</h4>  {/*using props destrcturing*/}

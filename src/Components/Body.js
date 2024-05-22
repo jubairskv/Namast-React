@@ -206,6 +206,7 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
+            data-testId="searchInput"
             className="border border-solid border-black"
             value={searchText} /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
             onChange={(e) => { setSearchText(e.target.value) }} />
