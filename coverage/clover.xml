@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1716351917004" clover="3.2.0">
-  <project timestamp="1716351917004" name="All files">
-    <metrics statements="34" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="11" coveredmethods="5" elements="49" coveredelements="33" complexity="0" loc="34" ncloc="34" packages="1" files="2" classes="2"/>
+<coverage generated="1716352231625" clover="3.2.0">
+  <project timestamp="1716352231625" name="All files">
+    <metrics statements="28" coveredstatements="19" conditionals="4" coveredconditionals="3" methods="10" coveredmethods="4" elements="42" coveredelements="26" complexity="0" loc="28" ncloc="28" packages="1" files="1" classes="1"/>
     <file name="Body.js" path="C:\Namast-React\src\Components\Body.js">
       <metrics statements="28" coveredstatements="19" conditionals="4" coveredconditionals="3" methods="10" coveredmethods="4"/>
       <line num="118" count="1" type="stmt"/>
@@ -32,15 +32,6 @@
       <line num="227" count="0" type="stmt"/>
       <line num="238" count="0" type="stmt"/>
       <line num="246" count="9" type="stmt"/>
-    </file>
-    <file name="Restaurantcard.js" path="C:\Namast-React\src\Components\Restaurantcard.js">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="7" count="9" type="stmt"/>
-      <line num="9" count="9" type="stmt"/>
-      <line num="10" count="9" type="stmt"/>
-      <line num="13" count="9" type="stmt"/>
-      <line num="16" count="9" type="stmt"/>
     </file>
   </project>
 </coverage>

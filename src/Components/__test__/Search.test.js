@@ -21,6 +21,9 @@ it("should render the body component with serach button", async()=>{
     
 )
 
+const beforeCard = screen.getAllByTestId("resCards")
+expect(eforeCard .length).toBe(20)
+
 const searchbtn = screen.getAllByRole("button" ,{name:"search"})
 //console.log(searchbtn)  
 
@@ -28,7 +31,7 @@ const searchinput = screen .getByTestId("searchinput")
 fireEvent.change(searchinput,{target:{value:"burger"}})
 fireEvent.click(searchbtn)
 
-const cards = screen.getAllByTestId("resCard")
+const aftercards = screen.getAllByTestId("resCard")
 
-expect(cards.length).toBe(4);  
+expect(aftercards.length).toBe(4);  
 })
