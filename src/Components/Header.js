@@ -12,15 +12,15 @@ const Header = () => {
   //console.log("Header render");
   const OnlineStatus = useOnlineStatus();
 
-  const {LoggedInUser}= useContext(UserContext)
+  const { LoggedInUser } = useContext(UserContext)
   //console.log(LoggedInUser)
 
 
   //subcribing to the sore using selector
 
-  const cartItems = useSelector((store)=>store.cart.items);
+  const cartItems = useSelector((store) => store.cart.items);
   //console.log(cartItems)
-  
+
 
   return (
     <div className="flex justify-between bg-pink-300 shadow-md sm:bg-yellow-50 lg:bg-green-300">
@@ -48,9 +48,11 @@ const Header = () => {
           </li>
           <li className="px-4 font-bold text-xl "> <Link to="/cart">Cart({cartItems.length}items)</Link> </li>
           <button className="login-btn"
-           onClick={() => { btnName === "Login" ? 
-           setbtnName("Logout") : 
-           setbtnName("Login") }}>{btnName}</button>
+            onClick={() => {
+              btnName === "Login" ?
+              setbtnName("Logout") :
+              setbtnName("Login")
+            }}>{btnName}</button>
           <li className="px-4 font-bold">{LoggedInUser}</li>
         </ul>
       </div>

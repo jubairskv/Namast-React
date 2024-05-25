@@ -2,45 +2,77 @@ import { render, screen } from "@testing-library/react";
 import Contact from "../Contact"
 import "@testing-library/jest-dom"
 
-test("should load contact us ccomponent", ()=>{ //single test case
-    render(<Contact/>)
+test("should load contact us ccomponent", () => { //single test case
+    render(<Contact />)
 
     const heading = screen.getByRole("heading");
-     //asseration
+    //console.log(heading)
+    //asseration
     expect(heading).toBeInTheDocument();
 })
 
+describe("for mulyiple testcase componet", () => {    //grouping testcases
 
-describe("contact us page test casese" , ()=>{    //multiple test case 
-    it("should load button inside contact us ccomponent", ()=>{  //it or test both are same
-        render(<Contact/>)
-    
-        const button = screen.getByText("Submit");
-         //asseration
-        expect(button).toBeInTheDocument();
-    })
-    
-    it("should load name inside contact us ccomponent", ()=>{
-        render(<Contact/>)
-    
-        const inputName = screen.getByPlaceholderText("name")
-         //asseration
-        expect(inputName).toBeInTheDocument();
+
+    it("should load contact us ccomponent", () => { //single test case
+        render(<Contact />)
+
+        const button = screen.getByRole("button");
+        //console.log(heading)
+        //asseration
+        expect(button).toBeInTheDocument();               //getbyrole refers to button,heading tag like that
     })
 
-    describe("nested test case" ,()=>{
-        test("should load 2 input boxes on the contact component",()=>{
-            render(<Contact/>)
-            
-           //Querying
-            const inputBoxes = screen.getAllByRole("textbox")   //multiple item to use All
-        
-            console.log(inputBoxes.length)
-        
+
+
+    test("should load 2 input boxes contact us ccomponent", () => { //single test case
+        render(<Contact />)
+
+
+        //query
+        const inputBoxes = screen.getAllByRole("textbox")    //getAllByROle all element like textbox
+        //console.log(inputBoxes[0])    returns JSX element
+        //console.log(inputBoxes.length)  array of textboxes
+
+        //asseration
+        expect(inputBoxes.length).toBe(2)
+        //expect(inputBoxes.length).not.toBe(3)
+    })
+
+    describe("nesdted grpingtestcases", () => {
+        it("should load contact us ccomponent", () => { //single test case
+            render(<Contact />)
+
+            const button = screen.getByText("Submit");    //getbytext refers to name like submit like that
+            //console.log(heading)
             //asseration
-            expect(inputBoxes.length).not.toBe(3);
+            expect(button).toBeInTheDocument();
         })
+
+        it("should load contact us ccomponent", () => { //single test case
+            render(<Contact />)
+
+            const placeholderName = screen.getByPlaceholderText("name")    //getbytext refers to name like submit like that
+            //console.log(heading)
+            //asseration
+            expect(placeholderName).toBeInTheDocument();
+        })
+
     })
-    
-    
+
 })
+
+
+it("should load contact us ccomponent", () => { //single test case
+    render(<Contact />)
+
+    const heading = screen.getByRole("heading");
+    //console.log(heading)
+    //asseration
+    expect(heading).toBeInTheDocument();
+    //expect(heading).toBeTruthy();
+
+})
+
+
+//it recommended
