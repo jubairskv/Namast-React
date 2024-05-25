@@ -201,12 +201,12 @@ const Body = () => {
 
   //jsx component render 1st after useEffect will render
   return res.length === 0 ? <Shimmer /> :/*ternary operator*/(
-    <div className="body">
+    <div data-testid="resCards" className="body">
       <div className="filter flex">
         <div className="search m-4 p-4">
           <input
             type="text"
-            data-testId="searchInput"
+            data-testid="searchInput"
             className="border border-solid border-black"
             value={searchText} /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
             onChange={(e) => { setSearchText(e.target.value) }} />
