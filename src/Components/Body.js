@@ -224,6 +224,7 @@ const Body = () => {
             className="px-4 py-2 bg-gray-100 rounded-lg"
             onClick={() => {
               const restList = res.filter((res) => res.info.avgRating > 4)
+              console.log(restList)
               setRes(restList)
             }}>
             Top rated Restaurant

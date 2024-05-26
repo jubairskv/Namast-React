@@ -13,6 +13,14 @@ global.fetch = jest.fn(() => {
     })
 })
 
+beforeAll(()=>{
+    console.log("before")
+})
+
+beforeEach(()=>{
+    console.log("before Each")
+})
+
 it("should search res list for Pizza", async () => {
     await act(async () => render(
         <BrowserRouter>
@@ -36,4 +44,23 @@ it("should search res list for Pizza", async () => {
 
      const aftercards = screen.getAllByTestId("resCards")
      expect(aftercards.length).toBe(1);  
+})
+
+it("should top Rated restaurant", async () => {
+    await act(async () => render(
+        <BrowserRouter>
+            <Body />
+        </BrowserRouter>)
+
+    )
+
+     const beforeCard = screen.getAllByTestId("resCards")
+     expect(beforeCard .length).toBe(10)
+
+    const topRatedBtn = screen.getByRole("button",{name:"Top rated Restaurant"})
+    fireEvent.click(topRatedBtn)
+
+    const aftercards = screen.getAllByTestId("resCards")
+    expect(aftercards.length).toBe(10)
+
 })

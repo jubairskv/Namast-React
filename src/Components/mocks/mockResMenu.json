@@ -1,0 +1,1661 @@
+{
+    "statusCode": 0,
+    "data": {
+        "statusMessage": "done successfully",
+        "cards": [
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                        "text": "Brahmins Tiffin Centre",
+                        "headerStyling": {
+                            "textColor": "text_Highest_Emphasis",
+                            "textVariant": "header_H3_Black"
+                        }
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.RestaurantBlTab",
+                        "tabs": [
+                            {
+                                "id": "Order Online",
+                                "title": "Order Online"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "273752",
+                            "name": "Brahmins Tiffin Centre",
+                            "city": "Bangalore",
+                            "slugs": {
+                                "restaurant": "brahmins-tiffin-center-indiranagar-indiranagar",
+                                "city": "bangalore"
+                            },
+                            "uniqueId": "e51e6528-4859-48c8-8fed-e84c17dc2d76",
+                            "cloudinaryImageId": "qmwj1vbbjljfp2saegsk",
+                            "locality": "New Thipasandra",
+                            "areaName": "Indiranagar",
+                            "costForTwo": "15000",
+                            "costForTwoMessage": "₹150 for two",
+                            "cuisines": [
+                                "South Indian",
+                                "North Indian"
+                            ],
+                            "avgRating": 4.4,
+                            "veg": true,
+                            "feeDetails": {
+                                "restaurantId": "273752",
+                                "fees": [
+                                    {
+                                        "name": "TYPE_DISTANCE",
+                                        "fee": 7500
+                                    },
+                                    {
+                                        "name": "TYPE_TIME"
+                                    }
+                                ],
+                                "totalFee": 7500,
+                                "title": "Delivery Charge",
+                                "amount": "7500",
+                                "icon": "v1648635511/Delivery_fee_new_cjxumu",
+                                "message": "<b>6.2 kms</b> | ₹75 Delivery fee will apply"
+                            },
+                            "parentId": "20078",
+                            "avgRatingString": "4.4",
+                            "totalRatingsString": "10K+ ratings",
+                            "sla": {
+                                "restaurantId": "273752",
+                                "deliveryTime": 35,
+                                "minDeliveryTime": 30,
+                                "maxDeliveryTime": 35,
+                                "lastMileTravel": 6.2,
+                                "serviceability": "SERVICEABLE",
+                                "stressFactor": 1,
+                                "rainMode": "RAIN_MODE_NONE",
+                                "longDistance": "LONG_DISTANCE_NOT_LONG_DISTANCE",
+                                "zoneId": 2,
+                                "slaString": "30-35 MINS",
+                                "lastMileTravelString": "6.1 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2024-05-26 11:59:00",
+                                "visibility": true,
+                                "opened": true,
+                                "restaurantClosedMeta": {}
+                            },
+                            "aggregatedDiscountInfo": {
+                                "shortDescriptionList": [
+                                    {
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "descriptionList": [
+                                    {
+                                        "meta": "Flat ₹50 off | Above ₹600",
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "meta": "20% off upto ₹125 | Use KOTAK811 Above ₹499",
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "visible": true
+                            },
+                            "badges": {},
+                            "slugString": "brahmins-tiffin-center-indiranagar-indiranagar",
+                            "multiOutlet": true,
+                            "isOpen": true,
+                            "labels": [
+                                {
+                                    "title": "Timings",
+                                    "message": "null"
+                                },
+                                {
+                                    "title": "Address",
+                                    "message": "200, 6th Cross Rd, Hal, HAL 3rd Stage, Stage 3, New Tippasandra, Bengaluru, Karnataka 560075"
+                                },
+                                {
+                                    "title": "Cuisines",
+                                    "message": "South Indian,North Indian"
+                                }
+                            ],
+                            "totalRatings": 10000,
+                            "aggregatedDiscountInfoV2": {
+                                "shortDescriptionList": [
+                                    {
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "descriptionList": [
+                                    {
+                                        "meta": "Flat ₹50 off | Above ₹600",
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "meta": "20% off upto ₹125 | Use KOTAK811 Above ₹499",
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "couponDetailsCta": "View coupon details"
+                            },
+                            "type": "F",
+                            "headerBanner": {
+                                "url": "swiggy://webview?is_external=false&webview_url=https://www.swiggy.com/restaurant-info/273752"
+                            },
+                            "expectationNotifiers": [
+                                {
+                                    "text": "<b>6.2 kms</b> | ₹75 Delivery fee will apply",
+                                    "icon": {
+                                        "imageId": "v1648635511/Delivery_fee_new_cjxumu"
+                                    },
+                                    "popup": {
+                                        "cta": {}
+                                    },
+                                    "type": "DISTANCE_FEE_FOOD_LM",
+                                    "enrichedText": "<b>6.2 kms</b> | ₹75 Delivery fee will apply",
+                                    "halfCardPopup": {
+                                        "halfCardPopupHeader": {}
+                                    },
+                                    "trailingIcon": {}
+                                }
+                            ],
+                            "ratingSlab": "RATING_SLAB_5",
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {}
+                            },
+                            "hasBestsellerItems": true,
+                            "cartOrderabilityNudgeBanner": {
+                                "parameters": {},
+                                "presentation": {}
+                            },
+                            "latLong": "12.971643,77.65070800000001",
+                            "backgroundImageOverlayInfo": {}
+                        },
+                        "analytics": {}
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_CHECK_ORDERABILITY_ON_ITEM_ADD",
+                        "sectionId": "POP_UP_CROUTON_MENU"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+                        "layout": {
+                            "rows": 1,
+                            "columns": 5,
+                            "horizontalScrollEnabled": true,
+                            "itemSpacing": 12,
+                            "lineSpacing": 10,
+                            "widgetPadding": {},
+                            "containerStyle": {
+                                "containerPadding": {
+                                    "left": 10,
+                                    "right": 10,
+                                    "bottom": 16
+                                }
+                            },
+                            "scrollBar": {}
+                        },
+                        "id": "offerCollectionWidget_UX4",
+                        "gridElements": {
+                            "infoWithStyle": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.OfferInfoWithStyle",
+                                "offers": [
+                                    {
+                                        "info": {
+                                            "header": "FLAT ₹50 OFF",
+                                            "offerTagColor": "#E46D47",
+                                            "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2024/4/30/1b1104b6-5df9-4176-8d9b-413c90e3e7e7_ICICI.png",
+                                            "offerIds": [
+                                                "dbc356ca-b9f5-4a6f-b36a-1e3642b72055"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "NO CODE REQUIRED",
+                                            "description": "ABOVE ₹600",
+                                            "offerType": "offers",
+                                            "restId": "273752",
+                                            "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2024/4/30/1b1104b6-5df9-4176-8d9b-413c90e3e7e7_ICICI.png",
+                                            "descriptionTextColor": "#7302060C"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "20% OFF UPTO ₹125",
+                                            "offerTagColor": "#E46D47",
+                                            "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2024/4/30/dfb04dfd-509e-4fe2-896f-75e78e398330_Kotak.png",
+                                            "offerIds": [
+                                                "686370b9-7afb-435f-a8c9-c6f29cc3ac54"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE KOTAK811",
+                                            "description": "ABOVE ₹499",
+                                            "offerType": "offers",
+                                            "restId": "273752",
+                                            "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2024/4/30/dfb04dfd-509e-4fe2-896f-75e78e398330_Kotak.png",
+                                            "descriptionTextColor": "#7302060C"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "15% OFF UPTO ₹150",
+                                            "offerTagColor": "#E46D47",
+                                            "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2024/4/30/52c92297-cc3d-4ba0-884a-0b95c20d6894_HSBC.png",
+                                            "offerIds": [
+                                                "f46211eb-0271-4869-b931-c4e2fe8d5ae8"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE HSBCFEST",
+                                            "description": "ABOVE ₹499",
+                                            "offerType": "offers",
+                                            "restId": "273752",
+                                            "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2024/4/30/52c92297-cc3d-4ba0-884a-0b95c20d6894_HSBC.png",
+                                            "descriptionTextColor": "#7302060C"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "15% OFF UPTO ₹300",
+                                            "offerTagColor": "#E46D47",
+                                            "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2024/5/2/91510830-7b39-403d-ba59-977874e710d7_Citi.png",
+                                            "offerIds": [
+                                                "fcc23178-93ee-4f52-b558-67e5ec8bf848"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE CITIFOODIE",
+                                            "description": "ABOVE ₹1200",
+                                            "offerType": "offers",
+                                            "restId": "273752",
+                                            "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2024/5/2/91510830-7b39-403d-ba59-977874e710d7_Citi.png",
+                                            "descriptionTextColor": "#7302060C"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "FLAT ₹150 OFF",
+                                            "offerTagColor": "#E46D47",
+                                            "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2024/5/3/8e4e2653-625a-4edc-af96-4fbd9e03e763_AMEX.png",
+                                            "offerIds": [
+                                                "9f240f15-4265-43d8-a3fe-6ffa0d93bab6"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE AMEX150",
+                                            "description": "ABOVE ₹600",
+                                            "offerType": "offers",
+                                            "restId": "273752",
+                                            "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2024/5/3/8e4e2653-625a-4edc-af96-4fbd9e03e763_AMEX.png",
+                                            "descriptionTextColor": "#7302060C"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    }
+                                ],
+                                "habitMilestoneInfo": {
+                                    "callout": {}
+                                },
+                                "loyaltyDiscoverPresentationInfo": {
+                                    "logoCtx": {}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "groupedCard": {
+                    "cardGroupMap": {
+                        "REGULAR": {
+                            "cards": [
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
+                                            "isPureVeg": true,
+                                            "badges": {},
+                                            "vegOnlyDetails": {
+                                                "imageId": "AutoVegOnly_qkjowj",
+                                                "title": "Showing only vegetarian options.",
+                                                "description": "Tap on the VEG ONLY button to turn off the setting"
+                                            },
+                                            "topRatedFilter": {
+                                                "attributes": {
+                                                    "displayText": "Ratings 4.0+"
+                                                }
+                                            },
+                                            "kidsCategoryFilter": {
+                                                "attributes": {
+                                                    "displayText": "Kids Favourites",
+                                                    "tooltip": {
+                                                        "enabled": true,
+                                                        "displayText": "Kids Favourites Filter applied. Remove this filter to see the full Menu."
+                                                    }
+                                                }
+                                            },
+                                            "vegFilter": {
+                                                "attributes": {
+                                                    "displayText": "VEG"
+                                                }
+                                            },
+                                            "nonvegFilter": {
+                                                "attributes": {
+                                                    "displayText": "NONVEG"
+                                                }
+                                            }
+                                        },
+                                        "relevance": {
+                                            "type": "RELEVANCE_TYPE_ON_MENU_FILTER_TOGGLED",
+                                            "sectionId": "MENU_FILTER_TOGGLE"
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "All Day Breakfast",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315822",
+                                                            "name": "Idli[2 Pcs]",
+                                                            "category": "All Day Breakfast",
+                                                            "imageId": "d875105fbeba17a2373beefaa735869e",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 5700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "4535 ratings",
+                                                                    "ratingCountV2": "4535"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315825",
+                                                            "name": "Mini-idly Sambar",
+                                                            "category": "All Day Breakfast",
+                                                            "description": "Mini idly soaked in sambar & served with chutney",
+                                                            "imageId": "7021a17c92e264cb833fcc78db01a370",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 10900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "1616 ratings",
+                                                                    "ratingCountV2": "1616"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315827",
+                                                            "name": "Kesari[250gm]",
+                                                            "category": "All Day Breakfast",
+                                                            "description": "Rava ghee kesari",
+                                                            "imageId": "6c1f92678448c6b20522f9f8b79aafa2",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 8900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.3",
+                                                                    "ratingCount": "826 ratings",
+                                                                    "ratingCountV2": "826"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "57247705",
+                                                            "name": "Podi Idly [13pcs]",
+                                                            "category": "All Day Breakfast",
+                                                            "description": "Crispy idly tossed with Podi & Tadka served with chutney. |CHEF'S SPECIAL|",
+                                                            "imageId": "1e180a4cd5fcfcbf400a50650e84eb1e",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 10900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "1161 ratings",
+                                                                    "ratingCountV2": "1161"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315824",
+                                                            "name": "Sambar Idly[2pcs]",
+                                                            "category": "All Day Breakfast",
+                                                            "description": "Idly dipped in sambar & Served with chutney .|CHEF'S SPECIAL|",
+                                                            "imageId": "8574cda9aedc682349b53b45c545c5ab",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 9900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.1",
+                                                                    "ratingCount": "499 ratings",
+                                                                    "ratingCountV2": "499"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315823",
+                                                            "name": "Vada [1 Pc]",
+                                                            "category": "All Day Breakfast",
+                                                            "imageId": "cf15d3c12d97f1763ad6d6e101ab5fc4",
+                                                            "isVeg": 1,
+                                                            "price": 3700,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 8:35 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.3",
+                                                                    "ratingCount": "2817 ratings",
+                                                                    "ratingCountV2": "2817"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315820",
+                                                            "name": "Pongal",
+                                                            "category": "All Day Breakfast",
+                                                            "imageId": "fb52b111c5b21035d9e172afa31c0131",
+                                                            "isVeg": 1,
+                                                            "price": 9900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 8:40 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "1298 ratings",
+                                                                    "ratingCountV2": "1298"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315826",
+                                                            "name": "Upma",
+                                                            "category": "All Day Breakfast",
+                                                            "imageId": "d879626a91c1f14587fc356c0eb4d0c0",
+                                                            "isVeg": 1,
+                                                            "price": 8900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 8:28 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "670 ratings",
+                                                                    "ratingCountV2": "670"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315829",
+                                                            "name": "Sambar Vada[1pc]",
+                                                            "category": "All Day Breakfast",
+                                                            "isVeg": 1,
+                                                            "price": 6000,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 8:35 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.0",
+                                                                    "ratingCount": "73 ratings",
+                                                                    "ratingCountV2": "73"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Dosa",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315832",
+                                                            "name": "Masala Dosa",
+                                                            "category": "Dosa",
+                                                            "imageId": "6990f9a3525c2d0f9a4d663a0ff5279a",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 10900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.1",
+                                                                    "ratingCount": "2511 ratings",
+                                                                    "ratingCountV2": "2511"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315831",
+                                                            "name": "Plain Dosa",
+                                                            "category": "Dosa",
+                                                            "description": "Plain dosa served with chutney & sambar",
+                                                            "imageId": "9547c88828f369a7bf728fb70a8b16ab",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 8900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.3",
+                                                                    "ratingCount": "1237 ratings",
+                                                                    "ratingCountV2": "1237"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "58806299",
+                                                            "name": "Set Dosa[3pcs]",
+                                                            "category": "Dosa",
+                                                            "description": "Set dosa( Served with chutney & sambar )",
+                                                            "imageId": "38d0e03f94b8a2eea7631a4cbe8fd36a",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 12900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.2",
+                                                                    "ratingCount": "851 ratings",
+                                                                    "ratingCountV2": "851"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315835",
+                                                            "name": "Ghee Masala Dosa",
+                                                            "category": "Dosa",
+                                                            "imageId": "47a2077ecea982cdaa61a0ec8556d40b",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 11900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.2",
+                                                                    "ratingCount": "793 ratings",
+                                                                    "ratingCountV2": "793"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315836",
+                                                            "name": "Ghee Podi Dosa",
+                                                            "category": "Dosa",
+                                                            "imageId": "f1f690a6a490776d0b31b36619413cac",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 11900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "3.9",
+                                                                    "ratingCount": "365 ratings",
+                                                                    "ratingCountV2": "365"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315834",
+                                                            "name": "Ghee Roast Dosa",
+                                                            "category": "Dosa",
+                                                            "imageId": "d08fd0b48d5df0f609a4d4ab03e61e54",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 10900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.3",
+                                                                    "ratingCount": "732 ratings",
+                                                                    "ratingCountV2": "732"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315833",
+                                                            "name": "Podi Dosa",
+                                                            "category": "Dosa",
+                                                            "imageId": "64a8ae9dbe83cc41de7697fc095b469c",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 10900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.2",
+                                                                    "ratingCount": "484 ratings",
+                                                                    "ratingCountV2": "484"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315839",
+                                                            "name": "Rava Dosa",
+                                                            "category": "Dosa",
+                                                            "imageId": "5643e2a56a9c9cfeba5dacd9af5ec283",
+                                                            "isVeg": 1,
+                                                            "price": 8900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 6:30 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.2",
+                                                                    "ratingCount": "709 ratings",
+                                                                    "ratingCountV2": "709"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Special Items",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "123899138",
+                                                            "name": "Paddu[6pcs]",
+                                                            "category": "Special Items",
+                                                            "description": "Served with chutney",
+                                                            "imageId": "7523698a77734d6b72347e2e7bcdff09",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 9900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.3",
+                                                                    "ratingCount": "362 ratings",
+                                                                    "ratingCountV2": "362"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315859",
+                                                            "name": "Mini Idly Sambar",
+                                                            "category": "Special Items",
+                                                            "description": "13 pcs mini Idly dipped in sambar | Served with chutney .|",
+                                                            "imageId": "2a9da022d45bfb2a1fb432904da320e0",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 10900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "1616 ratings",
+                                                                    "ratingCountV2": "1616"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315860",
+                                                            "name": "Podi Idly [13 Pc]",
+                                                            "category": "Special Items",
+                                                            "imageId": "f643a5f9b6e2eba3e81442a856a22cc1",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 10900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.5",
+                                                                    "ratingCount": "318 ratings",
+                                                                    "ratingCountV2": "318"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315857",
+                                                            "name": "Masala Paddu",
+                                                            "category": "Special Items",
+                                                            "description": "6 pc paddu served with chutney",
+                                                            "imageId": "9d9ed863da13aa13868e22d4d3e0a20f",
+                                                            "isVeg": 1,
+                                                            "price": 10900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 6:31 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.3",
+                                                                    "ratingCount": "1034 ratings",
+                                                                    "ratingCountV2": "1034"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "107682640",
+                                                            "name": "Idiyappam[3pcs]",
+                                                            "category": "Special Items",
+                                                            "description": "Idiyappam 3pcs served with 250ml coconut milk & whitechutney or kuruma (100ml)",
+                                                            "imageId": "2c8538b5e7326d45c6e61122c9fe7832",
+                                                            "isVeg": 1,
+                                                            "price": 9900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 6:36 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "190 ratings",
+                                                                    "ratingCountV2": "190"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Extras",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315862",
+                                                            "name": "Sambar[250ml]",
+                                                            "category": "Extras",
+                                                            "imageId": "3dae36c81d71f9bf0f4a14e5fa5375d8",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 4800,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "714 ratings",
+                                                                    "ratingCountV2": "714"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "123899140",
+                                                            "name": "Whitechutney[250ml]",
+                                                            "category": "Extras",
+                                                            "imageId": "560f868151a864bd01d62a2cafa410ee",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 4800,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "61 ratings",
+                                                                    "ratingCountV2": "61"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "123899139",
+                                                            "name": "Red Chutney[100ml]",
+                                                            "category": "Extras",
+                                                            "imageId": "b9b4b4cbef0991c391317372a6ff2c0e",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 4500,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.6",
+                                                                    "ratingCount": "54 ratings",
+                                                                    "ratingCountV2": "54"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Uttapam",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315843",
+                                                            "name": "Onion Uttapam",
+                                                            "category": "Uttapam",
+                                                            "description": "| Served with white chutney, red chutney and sambar |",
+                                                            "imageId": "0ba20253c3105a06311f0d5f796d7f39",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 9900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.3",
+                                                                    "ratingCount": "907 ratings",
+                                                                    "ratingCountV2": "907"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315844",
+                                                            "name": "Podi Onion Uttapam",
+                                                            "category": "Uttapam",
+                                                            "description": "Uttapam topping with ghee, podi, onion | served with chutney & sambar",
+                                                            "imageId": "2bb321915d7abb480285b4396f2da612",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 10900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.3",
+                                                                    "ratingCount": "324 ratings",
+                                                                    "ratingCountV2": "324"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "110992171",
+                                                            "name": "Podi Uttapam",
+                                                            "category": "Uttapam",
+                                                            "inStock": 1,
+                                                            "isVeg": 1,
+                                                            "price": 9900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "7 ratings",
+                                                                    "ratingCountV2": "7"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Combos",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "54140103",
+                                                            "name": "Breakfast Combo",
+                                                            "category": "Combos",
+                                                            "description": "Idly + dosa + mini vada + pongal + kesari served with chutney & sambar",
+                                                            "imageId": "10fc113c74d26731c625345344a40f34",
+                                                            "isVeg": 1,
+                                                            "price": 17900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 6:30 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {
+                                                                "text": "Bestseller",
+                                                                "textColor": "#ffffff",
+                                                                "topBackgroundColor": "#d53d4c",
+                                                                "bottomBackgroundColor": "#b02331"
+                                                            },
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "isBestseller": true,
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.3",
+                                                                    "ratingCount": "1081 ratings",
+                                                                    "ratingCountV2": "1081"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "65697079",
+                                                            "name": "Paddu-podi Idly Sweet Combo",
+                                                            "category": "Combos",
+                                                            "description": "Paddu (5pcs) + podi idly 5pcs + sweet served with chutney & sambar",
+                                                            "imageId": "ef06c7d4800de917743e3a846fee55cd",
+                                                            "isVeg": 1,
+                                                            "price": 16900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 6:30 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.5",
+                                                                    "ratingCount": "270 ratings",
+                                                                    "ratingCountV2": "270"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "58759043",
+                                                            "name": "Idly-paddu-pongal-kesari Combo",
+                                                            "category": "Combos",
+                                                            "description": "Idly (1Pc) + pongal + mini vada + mini dosa + sweet | Served with sambar and chutney |",
+                                                            "isVeg": 1,
+                                                            "price": 16900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 6:30 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.5",
+                                                                    "ratingCount": "220 ratings",
+                                                                    "ratingCountV2": "220"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "123899136",
+                                                            "name": "Kothu Parotta-podi Idly Combo",
+                                                            "category": "Combos",
+                                                            "description": "Kothu parotta + podi idly (5pcs) + sweet served with white chutney & kurma",
+                                                            "imageId": "9914c412a22ef01f65e096d09083ea1d",
+                                                            "isVeg": 1,
+                                                            "price": 16900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 6:30 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.4",
+                                                                    "ratingCount": "142 ratings",
+                                                                    "ratingCountV2": "142"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                                            "title": "Parottas",
+                                            "itemCards": [
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315853",
+                                                            "name": "Veg Kothu-parotta",
+                                                            "category": "Parottas",
+                                                            "description": "South style kothu parotta served with veg Kurma & Raita or white chutney",
+                                                            "imageId": "0a747f021a91dfa3e365730c5b20f326",
+                                                            "isVeg": 1,
+                                                            "price": 12900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 6:29 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.1",
+                                                                    "ratingCount": "391 ratings",
+                                                                    "ratingCountV2": "391"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                },
+                                                {
+                                                    "card": {
+                                                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                        "info": {
+                                                            "id": "53315851",
+                                                            "name": "Parotta[2pcs]",
+                                                            "category": "Parottas",
+                                                            "description": "Parotta served with veg-kurma & white chutney",
+                                                            "imageId": "7725f6a24a390a1578561c98ec7eef5f",
+                                                            "isVeg": 1,
+                                                            "price": 8900,
+                                                            "variants": {},
+                                                            "variantsV2": {},
+                                                            "nextAvailableAtMessage": "Next available at 6:29 am, tomorrow",
+                                                            "itemAttribute": {
+                                                                "vegClassifier": "VEG"
+                                                            },
+                                                            "ribbon": {},
+                                                            "type": "ITEM",
+                                                            "itemBadge": {},
+                                                            "badgesV2": {},
+                                                            "ratings": {
+                                                                "aggregatedRating": {
+                                                                    "rating": "4.1",
+                                                                    "ratingCount": "427 ratings",
+                                                                    "ratingCountV2": "427"
+                                                                }
+                                                            }
+                                                        },
+                                                        "analytics": {},
+                                                        "hideRestaurantDetails": true
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantLicenseInfo",
+                                            "type": "FSSAI",
+                                            "imageId": "fssai_final_edss9i",
+                                            "text": [
+                                                "License No. 21219187000811"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+                                            "name": "Brahmins Tiffin Centre",
+                                            "area": "Indiranagar",
+                                            "completeAddress": "200, 6th Cross Rd, Hal, HAL 3rd Stage, Stage 3, New Tippasandra, Bengaluru, Karnataka 560075"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "firstOffsetRequest": true,
+        "isQCLink": false
+    },
+    "tid": "ad02d043-11e8-4777-ae79-92afcfa5d304",
+    "sid": "e1kda1cc-0a66-4802-ab9d-52002870a599",
+    "deviceId": "9a35b0c7-0986-6c31-eada-520866f48fec",
+    "csrfToken": "u067uv2ARqGt-oGb21r4axplzCOb86xSeGO45Yfk"
+}
