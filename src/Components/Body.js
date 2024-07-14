@@ -199,6 +199,7 @@ const Body = () => {
 
 
 
+
   //jsx component render 1st after useEffect will render
   return res.length === 0 ? <Shimmer /> :/*ternary operator*/(
     <div data-testid="resCards" className="body">
@@ -217,6 +218,7 @@ const Body = () => {
               res.info.name.toLowerCase().includes(searchText.toLowerCase())
             )
             setFilterCards(filterCards)
+        
           }}>search</button>
         </div>
         <div className=" flex items-center m-4 p-4 ">

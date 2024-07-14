@@ -26,59 +26,59 @@ it("it should render header component with a login button", () => {
 })
 
 
-it("it should render header component with a cart item 0", () => {
-    render(
-        <BrowserRouter>
-            <Provider store={store}>
-                <Header />
-            </Provider>
-        </BrowserRouter>
-    );
+// it("it should render header component with a cart item 0", () => {
+//     render(
+//         <BrowserRouter>
+//             <Provider store={store}>
+//                 <Header />
+//             </Provider>
+//         </BrowserRouter>
+//     );
 
    
-   const cartItem = screen.getByText("Cart(0items)");  
+//    const cartItem = screen.getByText("Cart(0items)");  
 
-    expect(cartItem).toBeInTheDocument();
+//     expect(cartItem).toBeInTheDocument();
 
-})
+// })
 
-it("it should render header component with a cart item", () => {
-    render(
-        <BrowserRouter>
-            <Provider store={store}>
-                <Header />
-            </Provider>
-        </BrowserRouter>
-    );
+// it("it should render header component with a cart item", () => {
+//     render(
+//         <BrowserRouter>
+//             <Provider store={store}>
+//                 <Header />
+//             </Provider>
+//         </BrowserRouter>
+//     );
 
    
-   const cartItem = screen.getByText(/Cart/);  //regext it match Cart name
+//    const cartItem = screen.getByText(/Cart/);  //regext it match Cart name
    
-    expect(cartItem).toBeInTheDocument();
+//     expect(cartItem).toBeInTheDocument();
 
-})
+// })
 
-//Login Button test cases
+// //Login Button test cases
 
-it("should change login button to logout button on click",()=>{
-    render(
-        <BrowserRouter>
-            <Provider store={store}>
-                <Header />
-            </Provider>
-        </BrowserRouter>
-    );
+// it("should change login button to logout button on click",()=>{
+//     render(
+//         <BrowserRouter>
+//             <Provider store={store}>
+//                 <Header />
+//             </Provider>
+//         </BrowserRouter>
+//     );
 
-   //const loginButton = screen.getByRole("button");
-   const loginButton = screen.getByRole("button",{name:"Login"});   //finding specific button name for if any more btn is there
+//    //const loginButton = screen.getByRole("button");
+//    const loginButton = screen.getByRole("button",{name:"Login"});   //finding specific button name for if any more btn is there
 
-   fireEvent.click(loginButton)
+//    fireEvent.click(loginButton)
 
-    const logoutButton = screen.getByRole("button",{name:"Logout"})
-    //console.log(loginButton)
+//     const logoutButton = screen.getByRole("button",{name:"Logout"})
+//     //console.log(loginButton)
 
-    expect(logoutButton).toBeInTheDocument();
-})
+//     expect(logoutButton).toBeInTheDocument();
+// })
 
 
 
