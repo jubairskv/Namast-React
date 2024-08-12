@@ -9,3 +9,5 @@ export const CDN_URL =
  //console.log(MENU_API)
 
  export const swigg_url = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=393840&catalog_qa=undefined&isMenuUx4=true&submitAction=ENTER"
+
+ export const swigg_full_api = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.89960&lng=80.22090&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
