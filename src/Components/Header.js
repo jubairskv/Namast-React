@@ -32,19 +32,19 @@ const Header = () => {
           <li className="px-4">
             <Link to="/Contact">OnlineStatus:{OnlineStatus ? "✅" : "🔴"}</Link>
           </li>
-          <li className="px-4">
+          <li className="px-4 font-GilroyBold">
             {/* <a href="/">Home</a> */}
             <Link to="/">Home</Link>
           </li>
           <li className="px-4">
             {/* <a href="/About">About us</a> */}
-            <Link to="/About">About us</Link>
+            <Link to="/About">Search</Link>
           </li>
           <li className="px-4">
-            <Link to="/Contact">Contact</Link>
+            <Link to="/Contact">Offers</Link>
           </li>
           <li className="px-4">
-            <Link to="/Grocery">Grocery</Link>
+            <Link to="/Grocery">Help</Link>
           </li>
           <li className="px-4 font-bold text-xl "> <Link to="/cart">Cart({cartItems.length}items)</Link> </li>
           <button className="login-btn"
