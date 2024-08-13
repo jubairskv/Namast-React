@@ -6,6 +6,11 @@ import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
 import store from "../utils/store";
 import { IoSearch } from "react-icons/io5";
+import { BiSolidOffer } from "react-icons/bi";
+import { IoIosHelpBuoy } from "react-icons/io";
+import { BsCartCheck } from "react-icons/bs";
+import { TbUserSquareRounded } from "react-icons/tb";
+
 
 const Header = () => {
   let [btnName, setbtnName] = useState("Login");
@@ -38,20 +43,36 @@ const Header = () => {
             {/* <a href="/About">About us</a> */}
             <Link to="/About">
               <div className="flex items-center">
-                <IoSearch className=""/>
+                <IoSearch className="w-6 h-6" />
                 Search
               </div>
             </Link>
           </li>
           <li className="px-4 font-GilroyBold text-lg text-color-gray ">
-            <Link to="/Contact">Offers</Link>
+            <Link to="/Contact">
+              <div className="flex items-center">
+                <BiSolidOffer className="w-6 h-6" />
+                Offers
+              </div>
+            </Link>
           </li>
           <li className="px-4 font-GilroyBold text-lg  text-color-gray ">
-            <Link to="/Grocery">Help</Link>
+            <Link to="/Grocery">
+              <div className="flex items-center">
+                <IoIosHelpBuoy className="w-6 h-6" />
+                Help
+              </div>
+            </Link>
           </li>
           <li className="px-4 font-GilroyBold text-lg  text-color-gray ">
             {" "}
-            <Link to="/cart">Cart{/*({cartItems.length}items)*/}</Link>{" "}
+            <Link to="/cart">
+              <div className="flex items-center">
+                <BsCartCheck  className="w-6 h-6" />
+                Cart
+              </div>
+              {/*({cartItems.length}items)*/}
+            </Link>{" "}
           </li>
           <button
             className="login-btn  font-GilroyBold text-lg  text-color-gray  "
@@ -59,7 +80,11 @@ const Header = () => {
               btnName === "Login" ? setbtnName("Logout") : setbtnName("Login");
             }}
           >
-            {btnName}
+             <div className="flex items-center">
+                <TbUserSquareRounded  className="w-6 h-6" />
+                {btnName}
+              </div>
+           
           </button>
           <li className="px-4 font-bold">{LoggedInUser}</li>
         </ul>
