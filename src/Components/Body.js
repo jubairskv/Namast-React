@@ -4,6 +4,7 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext"
+import ScrollCards from "./ScrollCards";
 
 
 //import resList from "../utils/mockData";
@@ -243,6 +244,7 @@ const Body = () => {
         </div>
 
       </div>
+      <ScrollCards/>
       <div className="flex flex-wrap justify-center gap-8">
         {
           filterCards.map(restaurant =>
