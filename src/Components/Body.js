@@ -244,7 +244,19 @@ const Body = () => {
         </div>
 
       </div>
-      <ScrollCards/>
+      <div className="flex justify-evenly gap-5">
+      {
+          filterCards.map(restaurant =>
+            //<Link key={restaurant?.info?.id} 
+            //to={"restaurant/" + restaurant?.info?.id}>
+              /* {restaurant.data.promoted ?
+              <RestaurantcardPromoted resData={restaurant}/>:} */
+              <ScrollCards scrollData={restaurant} /*passing data as props to child component as resData */ />
+              
+          )
+
+        },
+      </div>
       <div className="flex flex-wrap justify-center gap-8">
         {
           filterCards.map(restaurant =>

@@ -1,8 +1,12 @@
 import React from 'react'
+import { CDN_URL } from "../utils/constant"
 
-const ScrollCards = () => {
+const ScrollCards = (props) => {
+    const { scrollData } = props
   return (
-    <div>ScrollCards</div>
+    <div>
+        <img src={CDN_URL + scrollData.info.cloudinaryImageId} alt='scrollImage'/>
+    </div>
   )
 }
 
