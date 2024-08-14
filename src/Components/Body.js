@@ -126,7 +126,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
   const [filterCards, setFilterCards] = useState([]);
   const [scroll, setScroll] = useState("");
-  const [scrollCards,setScrollCards] =useState([])
+  const [scrollCards, setScrollCards] = useState([]);
 
   //console.log(res)
   console.log("body render", scroll);
@@ -168,7 +168,7 @@ const Body = () => {
         json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
-      scrollCards()
+      scrollCards();
     } catch (err) {
       console.log(err);
     }
@@ -182,10 +182,10 @@ const Body = () => {
       const json = await data.json();
       console.log(json.data.cards[0].card.card.gridElements.infoWithStyle.info);
       //Optional Chanining - ?
-      setScroll(
-        json?.data?.cards[0]?.card?.card
+      setScroll(json?.data?.cards[0]?.card?.card);
+      setScrollCards(
+        json?.data?.cards[0]?.card?.card.gridElements.infoWithStyle.info
       );
-      setScrollCards(json?.data?.cards[0]?.card?.card.gridElements.infoWithStyle.info)
       console.log(
         json?.data?.cards[0]?.card?.card.gridElements.infoWithStyle.info
       );
@@ -194,7 +194,7 @@ const Body = () => {
     }
   };
 
-  console.log(scroll)
+  console.log(scroll);
 
   //const scrollCards = scroll?.gridElements?.infoWithStyle?.info
   //console.log(scrollCards)
@@ -296,9 +296,11 @@ const Body = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col">
-        <h1 className="">{scroll?.header?.title}</h1>
-        <div className="flex">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="pr-[63%] pb-10 font-GilroyExtraBold text-4xl">
+          {scroll?.header?.title}
+        </h1>
+        <div className="flex no-scrollbar overflow-x-scroll w-[90%]">
           {scrollCards.map((restaurant) => (
             <ScrollCards
               scrollData={
@@ -308,7 +310,10 @@ const Body = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8 pt-40">
+        <h1 className="pr-[59%] pb-10 font-GilroyExtraBold text-4xl">
+          {scroll?.header?.title}
+        </h1>
         {filterCards.map((restaurant) => (
           <Link
             key={restaurant?.info?.id}
