@@ -145,7 +145,6 @@ const Body = () => {
     () => {
       /*callback function */
       fetchData();
-      scrollData();
     },
     [] /*dependencies*/
   );
@@ -168,33 +167,16 @@ const Body = () => {
         json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
-      scrollCards();
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  const scrollData = async () => {
-    try {
-      const data = await fetch(
-        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-      );
-      const json = await data.json();
-      console.log(json.data.cards[0].card.card.gridElements.infoWithStyle.info);
-      //Optional Chanining - ?
-      setScroll(json?.data?.cards[0]?.card?.card);
       setScrollCards(
         json?.data?.cards[0]?.card?.card.gridElements.infoWithStyle.info
       );
-      console.log(
-        json?.data?.cards[0]?.card?.card.gridElements.infoWithStyle.info
-      );
+      setScroll(json?.data?.cards[0]?.card?.card);
     } catch (err) {
       console.log(err);
     }
   };
 
-  console.log(scroll);
+
 
   //const scrollCards = scroll?.gridElements?.infoWithStyle?.info
   //console.log(scrollCards)
