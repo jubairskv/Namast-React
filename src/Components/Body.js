@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import ScrollCards from "./ScrollCards";
-import { title } from "process";
+import TopResturant from "./TopResturant";
 
 //import resList from "../utils/mockData";
 
@@ -127,6 +127,8 @@ const Body = () => {
   const [filterCards, setFilterCards] = useState([]);
   const [scroll, setScroll] = useState("");
   const [scrollCards, setScrollCards] = useState([]);
+  const [topResturant, setTopResuturant] = useState([]);
+  const [title, setTitle] = useState("");
 
   //console.log(res)
   console.log("body render", scroll);
@@ -171,12 +173,12 @@ const Body = () => {
         json?.data?.cards[0]?.card?.card.gridElements.infoWithStyle.info
       );
       setScroll(json?.data?.cards[0]?.card?.card);
+      setTitle(json?.data?.cards[1]?.card?.card.header.title);
+      setTopResuturant();
     } catch (err) {
       console.log(err);
     }
   };
-
-
 
   //const scrollCards = scroll?.gridElements?.infoWithStyle?.info
   //console.log(scrollCards)
@@ -292,6 +294,12 @@ const Body = () => {
           ))}
         </div>
       </div>
+      <div>
+        <h1 className="pr-[20%] pb-10 font-GilroyExtraBold text-4xl text-nowrap">
+          {title}
+        </h1>
+        <TopResturant resData={filterCards} />
+      </div>
       <div className="flex flex-wrap justify-center gap-8 pt-40">
         <h1 className="pr-[59%] pb-10 font-GilroyExtraBold text-4xl">
           {scroll?.header?.title}
@@ -310,7 +318,7 @@ const Body = () => {
             />
           </Link>
         ))}
-        ,{console.log(filterCards)}
+        =
         {/* <RestaurantCard resData={resList[0]} />
           <RestaurantCard resData={resList[1]} />
           {console.log(resList)} */}
