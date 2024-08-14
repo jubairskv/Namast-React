@@ -1,11 +1,11 @@
-import RestaurantCard ,{withPromotedLabel} from "./Restaurantcard"
-import { useState, useEffect, useContext } from "react"
+import RestaurantCard, { withPromotedLabel } from "./Restaurantcard";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
-import UserContext from "../utils/UserContext"
+import UserContext from "../utils/UserContext";
 import ScrollCards from "./ScrollCards";
-
+import { title } from "process";
 
 //import resList from "../utils/mockData";
 
@@ -114,22 +114,22 @@ import ScrollCards from "./ScrollCards";
 //   }
 // ]
 
-
-
 const Body = () => {
   //Normal varaible
   //let res=[]
 
   //state Varaible res-inital value or default value  setRes-updated value      default value down  it also act as a nrml variable
-  const [res, setRes] = useState([]);  //function
+  const [res, setRes] = useState([]); //function
   //const res=arr[0]
   //const setRes=arr[1]
-  //wen ever there is a chnage in state variable react render the whole componet very fast-reconciliation
+  //when ever there is a chnage in state variable react render the whole componet very fast-reconciliation
   const [searchText, setSearchText] = useState("");
-  const [filterCards, setFilterCards] = useState([])
+  const [filterCards, setFilterCards] = useState([]);
+  const [scroll, setScroll] = useState("");
+  const [scrollCards,setScrollCards] =useState([])
 
   //console.log(res)
-  console.log("body render", res)
+  console.log("body render", scroll);
 
   //const RestaurantcardPromoted = withPromotedLabel(RestaurantCard)
   // const arr=useState(resList)   // behind the scene in usestate
@@ -141,24 +141,66 @@ const Body = () => {
   //if no dependencies array is empty => useEffect is called on initial render(just once it called when component render)
   // if u pass state as dependencies array whenever the state changes made it will rerender
   //if dependencies array is localstat it called every state is updated
-  useEffect(() => {/*callback function */
-    fetchData()
-  }, [] /*dependencies*/)
+  useEffect(
+    () => {
+      /*callback function */
+      fetchData();
+      scrollData();
+    },
+    [] /*dependencies*/
+  );
 
   const fetchData = async () => {
     try {
-      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
-      const json = await data.json()
-      console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants)
+      const data = await fetch(
+        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      );
+      const json = await data.json();
+      console.log(
+        json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
+      );
       //Optional Chanining - ?
-      setRes(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-      setFilterCards(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+      setRes(
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants
+      );
+      setFilterCards(
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants
+      );
+      scrollCards()
     } catch (err) {
-      console.log(err)
+      console.log(err);
     }
-  }
+  };
 
-  {/*  const fetchData = async () => {
+  const scrollData = async () => {
+    try {
+      const data = await fetch(
+        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      );
+      const json = await data.json();
+      console.log(json.data.cards[0].card.card.gridElements.infoWithStyle.info);
+      //Optional Chanining - ?
+      setScroll(
+        json?.data?.cards[0]?.card?.card
+      );
+      setScrollCards(json?.data?.cards[0]?.card?.card.gridElements.infoWithStyle.info)
+      console.log(
+        json?.data?.cards[0]?.card?.card.gridElements.infoWithStyle.info
+      );
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  console.log(scroll)
+
+  //const scrollCards = scroll?.gridElements?.infoWithStyle?.info
+  //console.log(scrollCards)
+
+  {
+    /*  const fetchData = async () => {
     try {
       const response = await fetch("https://corsproxy.io/? https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING", {
         method: "POST",
@@ -180,14 +222,17 @@ const Body = () => {
     } catch (err) {
       console.log(err);
     }
-  };*/}
+  };*/
+  }
 
   //conditional Rendering - replacing into ternary operator
-  {/*if(res.length===0){
+  {
+    /*if(res.length===0){
     return <Shimmer/>
-  }*/}
+  }*/
+  }
 
-  const {setUserName,LoggedInUser} =useContext(UserContext);
+  const { setUserName, LoggedInUser } = useContext(UserContext);
 
   const onlineStatus = useOnlineStatus();
 
@@ -198,77 +243,87 @@ const Body = () => {
       </h1>
     );
 
-
-
-
   //jsx component render 1st after useEffect will render
-  return res.length === 0 ? <Shimmer /> :/*ternary operator*/(
-    <div data-testid="resCards" className="body">
+  return res.length === 0 ? (
+    <Shimmer />
+  ) : (
+    /*ternary operator*/ <div data-testid="resCards" className="body">
       <div className="filter flex">
         <div className="search m-4 p-4">
           <input
             type="text"
             data-testid="searchInput"
             className="border border-solid border-black"
-            value={searchText} /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
-            onChange={(e) => { setSearchText(e.target.value) }} />
-          <button className="px-4 py-1 bg-green-100 m-4 rounded-lg" onClick={() => {
-            //filter the res card update the ui
-            //search Text
-            const filterCards = res.filter((res) =>
-              res.info.name.toLowerCase().includes(searchText.toLowerCase())
-            )
-            setFilterCards(filterCards)
-        
-          }}>search</button>
+            value={
+              searchText
+            } /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+          />
+          <button
+            className="px-4 py-1 bg-green-100 m-4 rounded-lg"
+            onClick={() => {
+              //filter the res card update the ui
+              //search Text
+              const filterCards = res.filter((res) =>
+                res.info.name.toLowerCase().includes(searchText.toLowerCase())
+              );
+              setFilterCards(filterCards);
+            }}
+          >
+            search
+          </button>
         </div>
         <div className=" flex items-center m-4 p-4 ">
           <button
             className="px-4 py-2 bg-gray-100 rounded-lg"
             onClick={() => {
-              const restList = res.filter((res) => res.info.avgRating > 4)
-              console.log(restList)
-              setRes(restList)
-            }}>
+              const restList = res.filter((res) => res.info.avgRating > 4);
+              console.log(restList);
+              setRes(restList);
+            }}
+          >
             Top rated Restaurant
           </button>
         </div>
         <div className="flex m-4 p-4 items-center ">
-          <label>
-             username : 
-          </label>
-          <input className="border border-black "
-          value={LoggedInUser}
-          onChange={(e)=>setUserName(e.target.value)}/>
-
+          <label>username :</label>
+          <input
+            className="border border-black "
+            value={LoggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
         </div>
-
       </div>
-      <div className="flex justify-evenly gap-5">
-      {
-          filterCards.map(restaurant =>
-            //<Link key={restaurant?.info?.id} 
-            //to={"restaurant/" + restaurant?.info?.id}>
-              /* {restaurant.data.promoted ?
-              <RestaurantcardPromoted resData={restaurant}/>:} */
-              <ScrollCards scrollData={restaurant} /*passing data as props to child component as resData */ />
-              
-          )
-
-        },
+      <div className="flex flex-col">
+        <h1 className="">{scroll?.header?.title}</h1>
+        <div className="flex">
+          {scrollCards.map((restaurant) => (
+            <ScrollCards
+              scrollData={
+                restaurant
+              } /*passing data as props to child component as resData */
+            />
+          ))}
+        </div>
       </div>
       <div className="flex flex-wrap justify-center gap-8">
-        {
-          filterCards.map(restaurant =>
-            <Link key={restaurant?.info?.id} 
-            to={"restaurant/" + restaurant?.info?.id}>
-              {/* {restaurant.data.promoted ?
+        {filterCards.map((restaurant) => (
+          <Link
+            key={restaurant?.info?.id}
+            to={"restaurant/" + restaurant?.info?.id}
+          >
+            {/* {restaurant.data.promoted ?
               <RestaurantcardPromoted resData={restaurant}/>:} */}
-              <RestaurantCard resData={restaurant} /*passing data as props to child component as resData */ /></Link>
-          )
-
-        },
-        {console.log(filterCards)}
+            <RestaurantCard
+              resData={
+                restaurant
+              } /*passing data as props to child component as resData */
+            />
+          </Link>
+        ))}
+        ,{console.log(filterCards)}
         {/* <RestaurantCard resData={resList[0]} />
           <RestaurantCard resData={resList[1]} />
           {console.log(resList)} */}
@@ -276,6 +331,6 @@ const Body = () => {
         {/* <RestaurantCard resName="Mc-Donals" cuisine="Briyani, North Indian, Asian"/> */}
       </div>
     </div>
-  )
-}
+  );
+};
 export default Body;

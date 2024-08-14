@@ -1,13 +1,18 @@
-import React from 'react'
-import { CDN_URL } from "../utils/constant"
+import React from "react";
+import { CDN_URL } from "../utils/constant";
 
 const ScrollCards = (props) => {
-    const { scrollData } = props
+  const { scrollData } = props;
+  console.log(scrollData);
   return (
-    <div>
-        <img src={CDN_URL + scrollData.info.cloudinaryImageId} alt='scrollImage'/>
+    <div className="">
+      <img
+        src={CDN_URL + scrollData.imageId}
+        alt="scrollImage"
+        className="max-w-40 h-auto"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default ScrollCards
+export default ScrollCards;
