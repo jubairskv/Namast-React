@@ -294,11 +294,15 @@ const Body = () => {
           ))}
         </div>
       </div>
-      <div>
+      <div className="">
         <h1 className="pr-[20%] pb-10 font-GilroyExtraBold text-4xl text-nowrap">
           {title}
         </h1>
-        <TopResturant resData={filterCards} />
+        <div className="flex no-scrollbar overflow-x-scroll w-[90%]">
+          {filterCards.map((restaurant) => (
+            <TopResturant resData={restaurant} />
+          ))}
+        </div>
       </div>
       <div className="flex flex-wrap justify-center gap-8 pt-40">
         <h1 className="pr-[59%] pb-10 font-GilroyExtraBold text-4xl">
