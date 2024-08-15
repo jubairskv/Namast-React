@@ -16,7 +16,10 @@ module.exports = {
       colors:{
         "color-gray":"#484c5c",
         "color-graylight":"#9799a3",
-      }
+      },
+      backgroundImage: {
+        'black-light-gradient': 'linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
+      },
       
     },
   },
