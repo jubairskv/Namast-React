@@ -1,6 +1,7 @@
 import React from "react";
 import { CDN_URL } from "../utils/constant";
 import StartIcon from "../Assets/"
+
 const TopResturant = ({ resData }) => {
   console.log(resData);
   return (
