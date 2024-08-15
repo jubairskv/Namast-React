@@ -12,7 +12,7 @@ const TopResturant = ({ resData }) => {
           alt="TopResturant"
           className="w-full h-full object-cover rounded-2xl"
         />
-        <h1 className="absolute font-GilroyBold text-3xl bottom-0 left-0 w-full pl-2 bg-black-light-gradient bg-opacity-10 backdrop-blur-[1px] text-white py-2 rounded-b-2xl">
+        <h1 className="absolute font-GilroyExtraBold text-xl bottom-0 left-0 w-full pl-2 text-nowrap bg-black-light-gradient bg-opacity-10 backdrop-blur-[1px] text-white py-2 rounded-b-2xl">
           {resData.info.aggregatedDiscountInfoV3.header +
             " " +
             resData.info.aggregatedDiscountInfoV3.subHeader}

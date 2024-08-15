@@ -294,17 +294,17 @@ const Body = () => {
           ))}
         </div>
       </div>
-      <div className="">
-        <h1 className="pr-[20%] pb-10 font-GilroyExtraBold text-4xl text-nowrap">
+      <div className="pl-12 pt-16">
+        <h1 className="pr-[20%] pl-10 pb-10 font-GilroyExtraBold text-4xl text-nowrap">
           {title}
         </h1>
-        <div className="flex no-scrollbar overflow-x-scroll w-[90%]">
+        <div className="flex no-scrollbar overflow-x-scroll w-[95%]">
           {filterCards.map((restaurant) => (
             <TopResturant resData={restaurant} />
           ))}
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-8 pt-40">
+      <div className="flex flex-wrap justify-center gap-8 pt-14">
         <h1 className="pr-[59%] pb-10 font-GilroyExtraBold text-4xl">
           {scroll?.header?.title}
         </h1>
