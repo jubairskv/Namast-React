@@ -1,37 +1,51 @@
-import User from "./User"
-import UserClass from "./UserClass"
-import { Component } from "react"    //import React
-import UserContext from "../utils/UserContext";
+import React from 'react'
 
-class About extends Component {    //React.component
-    constructor(props) {
-        super(props);
-        console.log("parent constrcture")  //1st called
-    }
-
-    componentDidMount(){
-        console.log("parent componetdidmount")  //3rd called
-    }
-    render() {
-        console.log("parent render")   //2nd called
-        return (
-            <div>
-                <h1>this is About PAge</h1>
-                <p>developed by jubair</p>
-                <h2>
-                    LoggedIn User 
-                    <UserContext.Consumer>
-                        {({LoggedInUser})=><h1>{LoggedInUser}</h1>}
-                    </UserContext.Consumer>
-                </h2>
-                <User name={"juabir kasim"} location={"salem"} />
-                {/* <UserClass name={"jubair kasim 1st child"} />
-                <UserClass name={"jubair kasim 2nd child"} /> */}
-            </div>
-        );
-    
-    };
+const About = () => {
+  return (
+    <div>About</div>
+  )
 }
+
+export default About
+
+
+
+
+
+// import User from "./User"
+// import UserClass from "./UserClass"
+// import { Component } from "react"    //import React
+// import UserContext from "../utils/UserContext";
+
+// class About extends Component {    //React.component
+//     constructor(props) {
+//         super(props);
+//         console.log("parent constrcture")  //1st called
+//     }
+
+//     componentDidMount(){
+//         console.log("parent componetdidmount")  //3rd called
+//     }
+//     render() {
+//         console.log("parent render")   //2nd called
+//         return (
+//             <div>
+//                 <h1>this is About PAge</h1>
+//                 <p>developed by jubair</p>
+//                 <h2>
+//                     LoggedIn User 
+//                     <UserContext.Consumer>
+//                         {({LoggedInUser})=><h1>{LoggedInUser}</h1>}
+//                     </UserContext.Consumer>
+//                 </h2>
+//                 <User name={"juabir kasim"} location={"salem"} />
+//                 {/* <UserClass name={"jubair kasim 1st child"} />
+//                 <UserClass name={"jubair kasim 2nd child"} /> */}
+//             </div>
+//         );
+    
+//     };
+// }
 
 
 // const About = ()=>{
@@ -45,7 +59,7 @@ class About extends Component {    //React.component
 //         </div>
 //     );
 // };
-export default About
+//export default About
 
 /* react render cycle     //this react life cycel
 -parent constrcture
