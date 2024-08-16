@@ -6,6 +6,8 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import ScrollCards from "./ScrollCards";
 import TopResturant from "./TopResturant";
+import swigg_full_api from "../utils/constant";
+import { CDN_URL } from "../utils/constant";
 
 //import resList from "../utils/mockData";
 
@@ -129,7 +131,10 @@ const Body = () => {
   const [scrollCards, setScrollCards] = useState([]);
   const [titleResturant, setTitleResuturant] = useState([]);
   const [title, setTitle] = useState("");
-  const [buttonCards,setButtonCards] =useState([])
+  const [buttonCards, setButtonCards] = useState([]);
+  const [buttonCards2, setButtonCards2] = useState([]);
+  const [buttonCards3, setButtonCards3] = useState([]);
+  const [playStoreIcon, setPlayStoreIcon] = useState("");
 
   //console.log(res)
   //console.log("body render", scroll);
@@ -158,7 +163,6 @@ const Body = () => {
         "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       );
       const json = await data.json();
-      //Optional Chanining - ?
       setRes(
         json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
@@ -173,7 +177,10 @@ const Body = () => {
       setScroll(json?.data?.cards[0]?.card?.card);
       setTitle(json?.data?.cards[1]?.card?.card.header.title);
       setTitleResuturant(json?.data?.cards[2]?.card?.card);
-      setButtonCards(json?.data?.cards[6]?.card?.card)
+      setButtonCards(json?.data?.cards[6]?.card?.card);
+      setButtonCards2(json?.data?.cards[7]?.card?.card);
+      setButtonCards3(json?.data?.cards[8]?.card?.card);
+      setPlayStoreIcon(json?.data?.cards[9]?.card?.card);
     } catch (err) {
       console.log(err);
     }
@@ -329,7 +336,6 @@ const Body = () => {
               />
             </Link>
           ))}
-          =
           {/* <RestaurantCard resData={resList[0]} />
           <RestaurantCard resData={resList[1]} />
           {console.log(resList)} */}
@@ -337,14 +343,52 @@ const Body = () => {
           {/* <RestaurantCard resName="Mc-Donals" cuisine="Briyani, North Indian, Asian"/> */}
         </div>
       </div>
-      <div className="pl-10">
+      <div className="pl-10 pt-2">
         <div className="pb-10 ">
           <h1 className=" font-GilroyExtraBold text-4xl pl-10">
             {buttonCards.title}
           </h1>
         </div>
-        <div className="grid grid-cols-5 pr-24 ">
+        <div className="grid grid-cols-5 pr-24 gap-4 pl-10">
+          {buttonCards.brands.map((Cards) => (
+            <button className="border border-solid p-5 rounded-lg text-nowrap  ">
+              {Cards.text}
+            </button>
+          ))}
         </div>
+      </div>
+      <div className="pl-10 pt-5">
+        <div className="pb-10 ">
+          <h1 className=" font-GilroyExtraBold text-4xl pl-10">
+            {buttonCards2.title}
+          </h1>
+        </div>
+        <div className="grid grid-cols-5 pr-24 gap-4 pl-10">
+          {buttonCards2.brands.map((Cards) => (
+            <button className="border border-solid p-5 rounded-lg text-nowrap  ">
+              {Cards.text}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="pl-10 pt-5">
+        <div className="pb-10 ">
+          <h1 className=" font-GilroyExtraBold text-4xl pl-10">
+            {buttonCards3.title}
+          </h1>
+        </div>
+        <div className="grid grid-cols-5 pr-24 gap-[30rem] pl-10">
+          {buttonCards3.brands.map((Cards) => (
+            <button className="border border-solid p-5 w-[20rem] rounded-lg text-nowrap  ">
+              {Cards.text}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className="w-full h-28 bg-color-lightgray mt-10">
+        <img src={CDN_URL + playStoreIcon.andriodAppImage}></img>
+        <img src={CDN_URL + playStoreIcon.iosAppImage}></img>
       </div>
     </div>
   );

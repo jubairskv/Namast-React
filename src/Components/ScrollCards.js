@@ -3,7 +3,7 @@ import { CDN_URL } from "../utils/constant";
 
 const ScrollCards = (props) => {
   const { scrollData } = props;
-  console.log(scrollData);
+  //console.log(scrollData);
   return (
     <div className="">
       <img

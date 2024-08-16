@@ -4,7 +4,7 @@ import { CDN_URL } from "../utils/constant";
 
 const TopResturant = ({ resData }) => {
   if (!resData) return null;
-  console.log(resData);
+  //console.log(resData);
   return (
     <div className="pl-10">
       <div className="relative w-64 h-48">
