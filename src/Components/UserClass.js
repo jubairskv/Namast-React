@@ -14,19 +14,19 @@ class UserClass extends React.Component{
             }           /*state */
         }
         //console.log(props)
-        console.log(this.props.name + " 1st child constrcture")
+        //console.log(this.props.name + " 1st child constrcture")
     }
     async componentDidMount(){
        // console.log(this.props.name + "child compoundDIdMount")
        const data = await fetch("https://api.github.com/users/jubairskv")
        const json = await data.json()
-       console.log(json)
+       //console.log(json)
        this.setState({
         userInfo:json
        })
 
        this.timer = setInterval(()=>{
-        console.log("jubair")
+        //console.log("jubair")
     },1000)
     }
     componentDidUpdate(prevProps,prevState){  //how you pass dependdencies in class component
@@ -37,11 +37,11 @@ class UserClass extends React.Component{
         if(this.state.count2!==prevState.count2){
 
         }
-        console.log("componentDidDpdate")
+        //console.log("componentDidDpdate")
     }
     componentWillUnmount(){
         clearInterval(this.timer)
-        console.log("ComponentWillUnmount")
+        //console.log("ComponentWillUnmount")
     }
     render() {
         //console.log(this.props .name + " 1st child render")

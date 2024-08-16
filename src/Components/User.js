@@ -7,11 +7,11 @@ const User = ({ name, location }) => {   // (props)
     useEffect(() => {
         data();
         const timer = setInterval(() => {
-            console.log("jubair")  //it will contionously rerender only in pareent componnt not in child component
+            //console.log("jubair")  //it will contionously rerender only in pareent componnt not in child component
         }, 1000)
-        console.log("useEffect")
+        //console.log("useEffect")
         return () => {
-            console.log("continous render")
+            //console.log("continous render")
             clearInterval(timer)  //to stop continous rerenderr in other page it work
         }
     })
@@ -19,7 +19,7 @@ const User = ({ name, location }) => {   // (props)
     const data = async () => {
         const api = await fetch("https://api.github.com/users/jubairk")
         const json_data = await api.json()
-        console.log(json_data)
+       // console.log(json_data)
     }
 
     return (
