@@ -174,8 +174,7 @@ const Body = () => {
       );
       setScroll(json?.data?.cards[0]?.card?.card);
       setTitle(json?.data?.cards[1]?.card?.card.header.title);
-      setTitleResuturant(json?.data?.cards[2]?.card?.card)
-      
+      setTitleResuturant(json?.data?.cards[2]?.card?.card.title);
     } catch (err) {
       console.log(err);
     }
@@ -301,7 +300,12 @@ const Body = () => {
         </h1>
         <div className="flex no-scrollbar overflow-x-scroll w-[95%]">
           {filterCards.map((restaurant) => (
-            <TopResturant resData={restaurant} />
+            <Link
+              key={restaurant?.info?.id}
+              to={"restaurant/" + restaurant?.info?.id}
+            >
+              <TopResturant resData={restaurant} />
+            </Link>
           ))}
         </div>
       </div>
@@ -311,7 +315,7 @@ const Body = () => {
             {titleResturant.title}
           </h1>
         </div>
-        <div className="grid grid-cols-4 ">
+        <div className="grid grid-cols-5 pr-24 ">
           {filterCards.map((restaurant) => (
             <Link
               key={restaurant?.info?.id}
