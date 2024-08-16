@@ -386,9 +386,20 @@ const Body = () => {
           ))}
         </div>
       </div>
-      <div className="w-full h-28 bg-color-lightgray mt-10">
-        <img src={CDN_URL + playStoreIcon.andriodAppImage}></img>
-        <img src={CDN_URL + playStoreIcon.iosAppImage}></img>
+      <div className="w-full h-28 bg-color-lightgray mt-10 flex justify-center items-center gap-8">
+        <h1 className="font-GilroyExtraBold text-color-gray">
+          {playStoreIcon.title}
+        </h1>
+        <img
+          src={CDN_URL + playStoreIcon.androidAppImage}
+          alt="playstoreandroid"
+          className="w-18 h-16"
+        ></img>
+        <img
+          src={CDN_URL + playStoreIcon.iosAppImage}
+          alt="playstoreiso"
+          className="w-18 h-16"
+        ></img>
       </div>
     </div>
   );
