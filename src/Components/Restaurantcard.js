@@ -14,15 +14,34 @@ const RestaurantCard = (props) => {
     //console.log(resName,cuisine)
     //const {resName,cuisine}=props  destrctuing props logic behind
     return (
-      <div data-testid="resCards" className="m-4 p-4  w-[250px] rounded-lg bg-gray-100 hover:bg-gray-300">
-        <img className="rounded-lg h-36 w-56" alt="Briyani Image" src={CDN_URL + resData.info.cloudinaryImageId} />
-        <h3 className="font-bold py-2 text-xl">{name}</h3>
-        <h4>{cuisines.join(", ")}</h4>  {/*using props destrcturing*/}
-        <h4>{avgRating}Star</h4>
-        <h4>{costForTwo}</h4>
-        <h4>{deliveryTime}</h4>
-        <h4>User : {LoggedInUser}</h4>
+      <div className="pl-10">
+      <div className="relative w-64 h-48">
+        <img
+          src={CDN_URL + resData?.info?.cloudinaryImageId}
+          alt="TopResturant"
+          className="w-full h-full object-cover rounded-2xl"
+        />
+        <h1 className="absolute font-GilroyExtraBold text-xl bottom-0 left-0 w-full pl-2 text-nowrap bg-black-light-gradient bg-opacity-10 backdrop-blur-[1px] text-white py-2 rounded-b-2xl">
+          {resData?.info?.aggregatedDiscountInfoV3?.header +
+            " " +
+            resData?.info?.aggregatedDiscountInfoV3?.subHeader}
+        </h1>
       </div>
+      <h1 className="font-GilroyBold text-lg pt-3 pl-3">{resData.info.name}</h1>
+      <div className="flex pl-3">
+        <h3 className="font-GilroyMediumBold">{resData.info.avgRating}</h3>
+        <h4 className="font-GilroySemiBold pl-2">
+          {" "}
+          . {resData.info.sla.slaString}
+        </h4>
+      </div>
+      <h5 className="font-GilroyMediumBold text-color-graylight pl-3">
+        {resData.info.cuisines.join(" ,")}
+      </h5>
+      <h5 className="font-GilroyMediumBold text-color-graylight pl-3">
+        {resData.info.areaName}
+      </h5>
+    </div>
     )
   }
   

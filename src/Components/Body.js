@@ -281,7 +281,7 @@ const Body = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center">
-        <h1 className="pr-[63%] pb-10 font-GilroyExtraBold text-4xl">
+        <h1 className="pr-[65%] pb-5 font-GilroyExtraBold text-4xl">
           {scroll?.header?.title}
         </h1>
         <div className="flex no-scrollbar overflow-x-scroll w-[90%]">
@@ -294,7 +294,7 @@ const Body = () => {
           ))}
         </div>
       </div>
-      <div className="pl-12 pt-16">
+      <div className="pl-10 pt-16">
         <h1 className="pr-[20%] pl-10 pb-10 font-GilroyExtraBold text-4xl text-nowrap">
           {title}
         </h1>
@@ -304,30 +304,34 @@ const Body = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-8 pt-14">
-        <h1 className="pr-[59%] pb-10 font-GilroyExtraBold text-4xl">
-          {scroll?.header?.title}
-        </h1>
-        {filterCards.map((restaurant) => (
-          <Link
-            key={restaurant?.info?.id}
-            to={"restaurant/" + restaurant?.info?.id}
-          >
-            {/* {restaurant.data.promoted ?
+      <div className="pl-10">
+        <div className="pb-10 ">
+          <h1 className=" font-GilroyExtraBold text-4xl pl-10">
+            {scroll?.header?.title}
+          </h1>
+        </div>
+        <div className="grid grid-cols-4 ">
+          {filterCards.map((restaurant) => (
+            <Link
+              key={restaurant?.info?.id}
+              to={"restaurant/" + restaurant?.info?.id}
+            >
+              {/* {restaurant.data.promoted ?
               <RestaurantcardPromoted resData={restaurant}/>:} */}
-            <RestaurantCard
-              resData={
-                restaurant
-              } /*passing data as props to child component as resData */
-            />
-          </Link>
-        ))}
-        =
-        {/* <RestaurantCard resData={resList[0]} />
+              <RestaurantCard
+                resData={
+                  restaurant
+                } /*passing data as props to child component as resData */
+              />
+            </Link>
+          ))}
+          =
+          {/* <RestaurantCard resData={resList[0]} />
           <RestaurantCard resData={resList[1]} />
           {console.log(resList)} */}
-        {/*<RestaurantCard resName="KFC" cuisine="Briyani, North Indian, Asian"/>*/}
-        {/* <RestaurantCard resName="Mc-Donals" cuisine="Briyani, North Indian, Asian"/> */}
+          {/*<RestaurantCard resName="KFC" cuisine="Briyani, North Indian, Asian"/>*/}
+          {/* <RestaurantCard resName="Mc-Donals" cuisine="Briyani, North Indian, Asian"/> */}
+        </div>
       </div>
     </div>
   );
