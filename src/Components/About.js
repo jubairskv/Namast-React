@@ -1,16 +1,39 @@
-import React from 'react'
+import React from "react";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div>
+      <div className="   flex justify-center items-center search m-4 p-4">
+        <input
+          type="text"
+          data-testid="searchInput"
+          className="border border-solid border-color-graylight w-[40%] h-[40px] "
+          value={
+            ""
+          } /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
+          onChange={(e) => {
+            setSearchText(e.target.value);
+          }}
+        />
+        <button
+          className="px-4 py-1 bg-green-100 m-4 rounded-lg"
+          onClick={() => {
+            //filter the res card update the ui
+            //search Text
+            const filterCards = res.filter((res) =>
+              res.info.name.toLowerCase().includes(searchText.toLowerCase())
+            );
+            setFilterCards(filterCards);
+          }}
+        >
+          search
+        </button>
+      </div>
+    </div>
+  );
+};
 
-export default About
-
-
-
-
+export default About;
 
 // import User from "./User"
 // import UserClass from "./UserClass"
@@ -33,7 +56,7 @@ export default About
 //                 <h1>this is About PAge</h1>
 //                 <p>developed by jubair</p>
 //                 <h2>
-//                     LoggedIn User 
+//                     LoggedIn User
 //                     <UserContext.Consumer>
 //                         {({LoggedInUser})=><h1>{LoggedInUser}</h1>}
 //                     </UserContext.Consumer>
@@ -43,10 +66,9 @@ export default About
 //                 <UserClass name={"jubair kasim 2nd child"} /> */}
 //             </div>
 //         );
-    
+
 //     };
 // }
-
 
 // const About = ()=>{
 //     return (
@@ -75,4 +97,3 @@ export default About
 -parent CompoundDidMount
 
 */
-
