@@ -27,7 +27,7 @@ const RestaurantCard = (props) => {
             resData?.info?.aggregatedDiscountInfoV3?.subHeader}
         </h1>
       </div>
-      <h1 className="font-GilroyBold text-lg pt-3 pl-3">{resData.info.name}</h1>
+      <h1 className="font-GilroyBold text-lg pt-3 pl-3 max-w-[80%]">{resData.info.name}</h1>
       <div className="flex pl-3">
         <h3 className="font-GilroyMediumBold">{resData.info.avgRating}</h3>
         <h4 className="font-GilroySemiBold pl-2">

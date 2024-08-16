@@ -127,7 +127,7 @@ const Body = () => {
   const [filterCards, setFilterCards] = useState([]);
   const [scroll, setScroll] = useState("");
   const [scrollCards, setScrollCards] = useState([]);
-  const [topResturant, setTopResuturant] = useState([]);
+  const [titleResturant, setTitleResuturant] = useState([]);
   const [title, setTitle] = useState("");
 
   //console.log(res)
@@ -174,7 +174,8 @@ const Body = () => {
       );
       setScroll(json?.data?.cards[0]?.card?.card);
       setTitle(json?.data?.cards[1]?.card?.card.header.title);
-      setTopResuturant();
+      setTitleResuturant(json?.data?.cards[2]?.card?.card)
+      
     } catch (err) {
       console.log(err);
     }
@@ -307,7 +308,7 @@ const Body = () => {
       <div className="pl-10">
         <div className="pb-10 ">
           <h1 className=" font-GilroyExtraBold text-4xl pl-10">
-            {scroll?.header?.title}
+            {titleResturant.title}
           </h1>
         </div>
         <div className="grid grid-cols-4 ">
