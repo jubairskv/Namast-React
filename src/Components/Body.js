@@ -129,6 +129,7 @@ const Body = () => {
   const [scrollCards, setScrollCards] = useState([]);
   const [titleResturant, setTitleResuturant] = useState([]);
   const [title, setTitle] = useState("");
+  const [buttonCards,setButtonCards] =useState([])
 
   //console.log(res)
   //console.log("body render", scroll);
@@ -172,7 +173,7 @@ const Body = () => {
       setScroll(json?.data?.cards[0]?.card?.card);
       setTitle(json?.data?.cards[1]?.card?.card.header.title);
       setTitleResuturant(json?.data?.cards[2]?.card?.card);
-      console.log(json?.data?.cards[2]?.card?.card)
+      setButtonCards(json?.data?.cards[6]?.card?.card)
     } catch (err) {
       console.log(err);
     }
@@ -334,6 +335,15 @@ const Body = () => {
           {console.log(resList)} */}
           {/*<RestaurantCard resName="KFC" cuisine="Briyani, North Indian, Asian"/>*/}
           {/* <RestaurantCard resName="Mc-Donals" cuisine="Briyani, North Indian, Asian"/> */}
+        </div>
+      </div>
+      <div className="pl-10">
+        <div className="pb-10 ">
+          <h1 className=" font-GilroyExtraBold text-4xl pl-10">
+            {buttonCards.title}
+          </h1>
+        </div>
+        <div className="grid grid-cols-5 pr-24 ">
         </div>
       </div>
     </div>
