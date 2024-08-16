@@ -260,7 +260,7 @@ const Body = () => {
           </button>
         </div>
         <div className=" flex items-center m-4 p-4 ">
-          <button
+          {/* <button
             className="px-4 py-2 bg-gray-100 rounded-lg"
             onClick={() => {
               const restList = res.filter((res) => res.info.avgRating > 4);
@@ -269,15 +269,15 @@ const Body = () => {
             }}
           >
             Top rated Restaurant
-          </button>
+          </button> */}
         </div>
         <div className="flex m-4 p-4 items-center ">
-          <label>username :</label>
+          {/* <label>username :</label>
           <input
             className="border border-black "
             value={LoggedInUser}
             onChange={(e) => setUserName(e.target.value)}
-          />
+          /> */}
         </div>
       </div>
       <div className="flex flex-col items-center justify-center">
