@@ -401,6 +401,33 @@ const Body = () => {
           className="w-18 h-16"
         ></img>
       </div>
+      <div className="w-full h-96 bg-black text-white flex justify-center gap-[10rem]">
+        <ul>
+          <li className="font-GilroyBold">swigg</li>
+          <li>text</li>
+        </ul>
+        <ul>
+          <li className="font-GilroyBold">Compnay</li>
+          <li>Careers</li>
+          <li>Team</li>
+        </ul>
+        <ul>
+          <li className="font-GilroyBold">Contact us</li>
+          <li>Partner with us</li>
+          <li>Ride with us</li>
+          <div className="flex flex-col">
+            <li className="font-GilroyBold">legal</li>
+            <li>Tearms & condition</li>
+            <li>Cookie policy</li>
+          </div>
+        </ul>
+        <ul>
+          <li className="font-GilroyExtraBold">we delivery to:</li>
+          <li>Banglore</li>
+          <li>Chennai</li>
+          <li>Hyderbad</li>
+        </ul>
+      </div>
     </div>
   );
 };
