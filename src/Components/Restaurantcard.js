@@ -14,7 +14,7 @@ const RestaurantCard = (props) => {
   const { deliveryTime } = resData?.info.sla;
   //console.log(resData)
 
-  //const { LoggedInUser } = useContext(UserContext);
+  const { LoggedInUser } = useContext(UserContext);
   //console.log(resName,cuisine)
   //const {resName,cuisine}=props  destrctuing props logic behind
   return (
