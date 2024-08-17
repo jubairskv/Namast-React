@@ -1,5 +1,3 @@
-// import { useEffect, useState } from "react"
-// import { MENU_API } from "../utils/constant";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom"; //this is used for to  find resId in router navition link as different id navigation for more component
 import useRestarauntMenu from "../utils/useRestaursntMenu";
