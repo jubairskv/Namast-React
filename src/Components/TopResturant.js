@@ -23,12 +23,13 @@ const TopResturant = ({ resData }) => {
       <div className="flex pl-3">
         <h3 className="font-GilroyMediumBold">{resData.info.avgRating}</h3>
         <h4 className="font-GilroySemiBold pl-2">
-          {" "}
-          . {resData.info.sla.slaString}
+          {resData.info.sla.slaString}
         </h4>
       </div>
       <h5 className="font-GilroyMediumBold text-color-graylight pl-3">
-        {resData.info.cuisines.join(" ,")}
+        {resData.info.cuisines.join(", ").length > 24
+          ? `${resData.info.cuisines.join(", ").slice(0, 24)}...`
+          : resData.info.cuisines.join(", ")}
       </h5>
       <h5 className="font-GilroyMediumBold text-color-graylight pl-3">
         {resData.info.areaName}

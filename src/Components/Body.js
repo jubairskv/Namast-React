@@ -349,9 +349,9 @@ const Body = () => {
             {buttonCards.title}
           </h1>
         </div>
-        <div className="grid grid-cols-5 pr-24 gap-4 pl-10">
+        <div className="grid grid-cols-4 pr-24 gap-4 pl-10">
           {buttonCards.brands.map((Cards) => (
-            <button className="border border-solid p-5 rounded-lg text-nowrap  ">
+            <button className="border border-solid p-5 rounded-lg text-nowrap font-GilroySemiBold  ">
               {Cards.text}
             </button>
           ))}
@@ -363,9 +363,9 @@ const Body = () => {
             {buttonCards2.title}
           </h1>
         </div>
-        <div className="grid grid-cols-5 pr-24 gap-4 pl-10">
+        <div className="grid grid-cols-4 pr-24 gap-4 pl-10">
           {buttonCards2.brands.map((Cards) => (
-            <button className="border border-solid p-5 rounded-lg text-nowrap  ">
+            <button className="border border-solid p-5 rounded-lg text-nowrap font-GilroySemiBold ">
               {Cards.text}
             </button>
           ))}
@@ -378,9 +378,9 @@ const Body = () => {
             {buttonCards3.title}
           </h1>
         </div>
-        <div className="grid grid-cols-5 pr-24 gap-[30rem] pl-10">
+        <div className="grid grid-cols-5 pr-24 gap-[44rem] pl-10">
           {buttonCards3.brands.map((Cards) => (
-            <button className="border border-solid p-5 w-[20rem] rounded-lg text-nowrap  ">
+            <button className="border border-solid p-5 w-[40rem] rounded-lg text-nowrap font-GilroySemiBold  ">
               {Cards.text}
             </button>
           ))}
