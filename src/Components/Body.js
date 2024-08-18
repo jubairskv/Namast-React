@@ -182,6 +182,7 @@ const Body = () => {
       setButtonCards2(json?.data?.cards[7]?.card?.card);
       setButtonCards3(json?.data?.cards[8]?.card?.card);
       setPlayStoreIcon(json?.data?.cards[9]?.card?.card);
+      console.log( json?.data?.cards[0]?.card?.card.gridElements.infoWithStyle.info)
     } catch (err) {
       console.log(err);
     }
@@ -292,13 +293,17 @@ const Body = () => {
           {scroll?.header?.title}
         </h1>
         <div className="flex no-scrollbar overflow-x-scroll w-[90%]">
-          {scrollCards.map((restaurant) => (
-            <ScrollCards
+          {scrollCards.map((restaurant) => ( 
+            <Link to={"scroll/" + restaurant?.info?.id}  key={restaurant?.info?.id}>
+              <ScrollCards
               scrollData={
                 restaurant
-              } /*passing data as props to child component as resData */
+              }                                   /*passing data as props to child component as resData */
             />
+            </Link>
           ))}
+          
+
         </div>
       </div>
       <div className="pl-10 pt-16">

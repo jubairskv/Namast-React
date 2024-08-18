@@ -13,6 +13,7 @@ import Shimmer from "./Components/Shimmer";
 import UserContext from "./utils/UserContext";
 //import Grocery from "./Components/Grocery";
 import Cart from "./Components/Cart";
+import ScrollMenu from "./Components/ScrollMenu";
 
 const Grocery = lazy(() => import("./Components/Grocery"));
 const About = lazy(() => import("./Components/About"));
@@ -75,6 +76,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurant/:resId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/scroll/:secId",
+        element: <ScrollMenu />,
       },
       {
         path: "/cart",
