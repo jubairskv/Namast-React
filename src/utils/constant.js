@@ -1,6 +1,8 @@
 export const LOGO_URL =   //named export for multiple links
 "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_96,h_96/portal/c/logo_2022.png"
 
+export const logo_url = "https://image.freepik.com/free-vector/good-food-logo-design_79169-10.jpg"
+
 export const CDN_URL =
  "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
 

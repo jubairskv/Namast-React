@@ -242,13 +242,13 @@ const Body = () => {
     /*ternary operator*/ <div data-testid="resCards" className="body">
       <div className="filter flex">
         <div className="search m-4 p-4">
-          <input
+         <input
             type="text"
             data-testid="searchInput"
             className="border border-solid border-black"
             value={
               searchText
-            } /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
+            }  /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
@@ -294,7 +294,7 @@ const Body = () => {
         </h1>
         <div className="flex no-scrollbar overflow-x-scroll w-[90%]">
           {scrollCards.map((restaurant) => ( 
-            <Link to={"scroll/" + restaurant?.info?.id}  key={restaurant?.info?.id}>
+            <Link to={"scroll/" + restaurant?.info?.id}  >
               <ScrollCards
               scrollData={
                 restaurant
