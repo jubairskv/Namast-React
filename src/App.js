@@ -78,7 +78,7 @@ const appRouter = createBrowserRouter([
         element: <RestaurantMenu />,
       },
       {
-        path: "/scroll/:secId",
+        path: "/scroll/:resId",
         element: <ScrollMenu />,
       },
       {
