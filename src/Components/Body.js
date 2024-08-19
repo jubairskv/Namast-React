@@ -305,6 +305,9 @@ const Body = () => {
           
 
         </div>
+      </div> 
+      <div className="w-[95%] pl-20 pt-10">
+        <hr/>
       </div>
       <div className="pl-10 pt-16">
         <h1 className="pr-[20%] pl-10 pb-10 font-GilroyExtraBold text-4xl text-nowrap">
@@ -321,7 +324,10 @@ const Body = () => {
           ))}
         </div>
       </div>
-      <div className="pl-10">
+      <div className="w-[95%] pl-20 pt-10">
+        <hr/>
+      </div>
+      <div className="pl-10 pt-16">
         <div className="pb-10 ">
           <h1 className=" font-GilroyExtraBold text-4xl pl-10">
             {titleResturant.title}
@@ -349,7 +355,10 @@ const Body = () => {
           {/* <RestaurantCard resName="Mc-Donals" cuisine="Briyani, North Indian, Asian"/> */}
         </div>
       </div>
-      <div className="pl-10 pt-2">
+      <div className="w-[95%] pl-20 pt-10">
+        <hr/>
+      </div>
+      <div className="pl-10 pt-16">
         <div className="pb-10 ">
           <h1 className=" font-GilroyExtraBold text-4xl pl-10">
             {buttonCards.title}
