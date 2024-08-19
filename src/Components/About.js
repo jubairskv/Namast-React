@@ -7,13 +7,14 @@ const About = () => {
         <input
           type="text"
           data-testid="searchInput"
-          className="border border-solid border-color-graylight w-[40%] h-[40px] "
+          className="border border-solid border-color-graylight w-[40%] h-[40px] pl-5 font-GilroySemiBold "
           value={
             ""
           } /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
           onChange={(e) => {
             setSearchText(e.target.value);
           }}
+          placeholder="Search for resturants and food"
         />
         <button
           className="px-4 py-1 bg-green-100 m-4 rounded-lg"
