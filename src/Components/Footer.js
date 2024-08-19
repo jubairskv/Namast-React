@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="w-full h-[28rem] bg-black text-white flex justify-center gap-[10rem] pt-10 ">
       <ul>
         <li className="font-GilroyBold">swigg</li>
-        <li>text</li>
+        <li className="">&copy; 2024 instaFood. All rights reserved.</li>
       </ul>
       <ul>
         <li className="font-GilroyBold text-xl">Company</li>
