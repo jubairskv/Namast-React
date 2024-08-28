@@ -26,7 +26,7 @@ const Header = () => {
   //console.log(cartItems)
 
   return (
-    <div className="flex justify-around items-center w-full h-[95px] bg-white shadow-md sm:bg-white lg:bg-white pr-69  ">
+    <div className="flex justify-around items-center w-full h-[95px] bg-white shadow-md sm:bg-white lg:bg-white pr-69 ">
       <div className="logo-conatiner">
         <img className="w-[80px] items-center pt-1" src={LOGO_URL} />
       </div>

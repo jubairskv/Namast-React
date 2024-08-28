@@ -242,18 +242,8 @@ const Body = () => {
     /*ternary operator*/ <div data-testid="resCards" className="body">
       <div className="filter flex">
         <div className="search m-4 p-4">
-         <input
-            type="text"
-            data-testid="searchInput"
-            className="border border-solid border-black"
-            value={
-              searchText
-            }  /* when i give value as searchtext u cant able to type in the placeholder it will bind to the state so thatu need to update the state with help of onchange((e)=>{setSearchText(e.target.vale)})*/
-            onChange={(e) => {
-              setSearchText(e.target.value);
-            }}
-          />
-          <button
+         
+          {/* <button
             className="px-4 py-1 bg-green-100 m-4 rounded-lg"
             onClick={() => {
               //filter the res card update the ui
@@ -265,7 +255,7 @@ const Body = () => {
             }}
           >
             search
-          </button>
+          </button> */}
         </div>
         <div className=" flex items-center m-4 p-4 ">
           {/* <button
